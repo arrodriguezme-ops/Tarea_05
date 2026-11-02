@@ -77,3 +77,9 @@ def test_snr_is_measured():
 def test_engine_has_no_ui_imports():
     code = "import sys, src.engine; assert not {'streamlit','gradio'} & set(sys.modules)"
     assert subprocess.run([sys.executable, "-c", code]).returncode == 0
+
+
+def test_measure_words_and_no_false_quantity():
+    t = "Quiero una porción de papas. Una de las pizzas no. El total es nueve soles."
+    r = engine.process_transcript(t, "order", "rules", CFG)
+    assert [(i["product"], i["quantity"]) for i in r["fields"]["items"]] == [("papas", 1)]

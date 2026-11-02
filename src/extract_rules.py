@@ -65,6 +65,7 @@ def extract_order(transcript: str, cfg: dict) -> dict:
     spans = number_spans(transcript)
     out = {k: dict(EMPTY) for k in ocfg["fields"]}
     corr, cancel = set(ocfg["correction_markers"]), set(ocfg["cancel_markers"])
+    skip = set(ocfg["measure_words"]) | {"de"}
     start_to_span = {sp["start"]: sp for sp in spans}
     end_to_span = {sp["end"]: sp for sp in spans}
 
@@ -83,7 +84,12 @@ def extract_order(transcript: str, cfg: dict) -> dict:
         for key, rx in prod_re.items():
             if not rx.fullmatch(tok):
                 continue
-            qty_sp = next((end_to_span[j] for j in range(i, max(-1, i - 3), -1) if j in end_to_span), None)
+            # el numero va pegado al producto, saltando medidas ("una porcion de papas")
+            # y admitiendo una palabra en medio ("dos grandes pizzas")
+            j = i
+            while j > 0 and toks[j - 1] in skip:
+                j -= 1
+            qty_sp = next((end_to_span[c] for c in (j, j - 1) if c in end_to_span), None)
             if any(t in cancel for t in toks[max(0, i - 4):i]) and key in items:
                 del items[key]
                 break

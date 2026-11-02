@@ -86,6 +86,7 @@ order:
     tarjeta: "tarjeta"
     yape: "yape|plin"
   address_pattern: "((?:avenida|av|calle|jiron|pasaje) [a-z0-9 ]{3,40}? \\d{1,5})"
+  measure_words: [porcion, porciones, orden, ordenes, plato, platos, vaso, vasos]
   correction_markers: [mejor, perdon, corrijo, cambia, cambio, no espera, en realidad]
   cancel_markers: [quita, quitame, sin, cancela, elimina]
   total_keywords: [total]

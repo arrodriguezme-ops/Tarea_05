@@ -16,3 +16,10 @@ que va en `data/ground_truth/interviews.csv` o la entrada de `data/ground_truth/
 ```
 Nombre los audios igual que `clip`: `data/audio/interview/interview_01.m4a`, `data/audio/order/order_01.m4a`.
 Nota: `total_dicho` es lo que se DICE en voz alta, aunque sea incorrecto (esa es la trampa).
+
+---
+## Guiones incluidos (generados)
+`interview_01..05.md` y `order_01..05.md` salen de `scripts/script_data.py`. Si cambia palabras al grabar,
+edite ahi y regenere con `python -m scripts.build_recording_scripts` (reescribe los .md y el ground truth).
+Lea el guion tal cual: la transcripcion de referencia es el dialogo sin etiquetas A/B.
+Dos entrevistas (02 y 04) llevan trampas a proposito para las reglas; la llamada 04 muestra el limite del diagnostico.
