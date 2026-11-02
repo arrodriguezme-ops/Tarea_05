@@ -102,7 +102,7 @@ with tab4:
     st.write("Suba un clip: se transcribe con el motor (puede tardar sin GPU).")
     schema = st.selectbox("Esquema", ["interview", "order"])
     ext = st.selectbox("Extractor", ["rules", "llm"])
-    up = st.file_uploader("Audio", type=["wav", "mp3", "m4a", "ogg", "opus", "flac"])
+    up = st.file_uploader("Audio", type=["wav", "mp3", "m4a", "mp4", "aac", "ogg", "opus", "flac"])
     if up and st.button("Procesar"):
         with tempfile.NamedTemporaryFile(suffix=Path(up.name).suffix, delete=False) as f:
             f.write(up.read())

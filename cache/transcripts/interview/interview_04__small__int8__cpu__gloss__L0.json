@@ -1,0 +1,16 @@
+{
+ "text": "Buenos días, he leído tu currículum, pero me gustaría escucharlo de ti, ¿cuál ha sido tu recorrido? Buenos días, llevo 10 años de experiencia analítica avanzada, la mayor parte en bancada de una empresa de telecomunicaciones, empecé como analista y fui subiendo hasta el liderar de equipos, tu posición más reciente, mi último puesto fue gerente de analítica en una empresa de telecomunicaciones donde coordinaba a 8 personas, manejábamos un presupuesto de 300 mil soles al año para proyectos de ciencia de datos y la mayor parte se iba en infraestructura, interesante que tecnología vas a usar a tu equipo, entrenábamos las redes neuronales con tensorflow, la mayoría del código en python, todo en la nube de aws y para los análisis exploratorios usábamos a sql sobre un almacén de datos enormes, perfecto y cómo el cargo implica reportar a la matriz, cómo andas con el inglés, tengo un nivel avanzado, tengo una certificación y la mayoría de mis reuniones en los últimos años serán con proveedores de Estados Unidos y Europa, hablemos de la compensación, cuándo esperáis ganar, considero mi experiencia del tamaño del equipo que tendría el cargo, mi pretensión es de 12 mil soles mensuales, estoy abierto a una parte variable por objetivos y si la empresa maneje ese esquema, tomamos nota que tan pronto podrías empezar bueno una cultura conciencia, tengo un contacto vigente con clausula de salida así que necesito tres meses para dejar todo en orden y entregar bien a mi reemplazo, para terminar qué tipo de cultura de trabajo prefieres, una cultura de confianza con objetivos claros pero sin incomodar cada mundo de la persona, en mis equipos siempre intenté ser la que pudiera enfocarse y aprender y proponer mejoras y creo que los resultados eran mejores así, también valoro mucho la formación continua, coincidimos bastante en eso, tienes alguna pregunta para nosotros, quisiera conocer cómo está compuesto el equipo actual y cuáles son los principales retos para este año, es comprensible, gracias por tu tiempo, nos pondremos en contacto contigo, gracias ustedes buen día",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 44.36506019998342,
+ "audio_s": 135.4453125,
+ "sec_per_audio_min": 19.652977005010825,
+ "vram_peak_mb": null,
+ "glossary": true,
+ "cpu_fallback": false,
+ "clip": "interview_04",
+ "task": "interview",
+ "level": "L0"
+}

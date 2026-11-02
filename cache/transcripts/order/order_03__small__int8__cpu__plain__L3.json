@@ -1,0 +1,18 @@
+{
+ "text": "Hola, ¿qué tal? Buenas tardes, hamburgueserías, no te do. Buenas tardes, pero ¿qué es el pedido? Buenas tardes, el pedido es para almorzar de una oficina, quiero una hamburguesa y ensalada y una porción de pajas. Está bien, lo confirmo. Sí, por favor, y le daré eso a parte, muchas gracias. ¿Prefirme la hamburguesa con todas las cremas o alguna especial? Perfecto, punto a medio entonces. ¿Quiere que le agregamos alguna bebida? No, no, gracias. ¿Cuál es tu dirección? Hironguaya 456, en el centro. Preguntes por la recepción del mazela. Perfecto, Hironguaya. ¿Cómo será el pago? Ya, pero básicamente. Una pregunta, ¿necesitas cubiertos estatales o servilletas? Sí, por favor, más que todos servilletas. Sí, perfecto. Las incluimos, la ruptura del pedido, una hamburguesa ensalada con agreso aparte y unas papas. Está bien, sí. Claro, el total se lleva en 47 soles. Entendido, el agua al pago ya peor ahora mismo. Está listo en media hora. Sí, en 25 minutos le llega. Gracias por su preferencia.",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 22.7093257997185,
+ "audio_s": 69.44,
+ "sec_per_audio_min": 19.62211330620838,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_03",
+ "task": "order",
+ "level": "L3",
+ "snr_db_measured": 10.000000000327605,
+ "snr_db_target": 10
+}

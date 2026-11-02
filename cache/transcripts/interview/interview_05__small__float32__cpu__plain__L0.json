@@ -1,0 +1,16 @@
+{
+ "text": "Hola, qué gusto conocerte. Cuéntame, ¿en qué se estaba trabajando últimamente? Hola, el gusto es mío. Me desempeñé como científico de datos en un startup de comercio electrónico donde analizaba el comportamiento de compra de los usuarios y armadas modelos de recomendación para la página principal. ¿Cuántos años llevas en esto? 5 años con la experiencia en total y los últimos dos eran en ese startup que fue donde más aprendí porque éramos un equipo pequeño y todos hacíamos de todo. ¿Qué bien? ¿Qué herramientas utilizadas? Todo lo hago en Python, con pandas para manipular las bases de datos, para mostrar resultados de marketing armadas pequeñas aplicaciones con streamlit y mantenía el código ordenado con git para no pisarnos entre compañeros. Muy útil. Ahora, ¿cuál es tu pretensión salarial? P pretensión salarial es 7.800 soles al mes. Lo calculado según lo que paga el mercado para mi nivel, pero sé que hay margen de conversación. ¿Entendido? ¿Y el inglés cómo lo manejas? Mi inglés es intermedio, me defiendo bien leyendo artículos y viendo cursos en línea, pero me pone nervioso a hablar en reuniones. Es algo en lo que estoy trabajando. Es normal. ¿Para cuándo podrías estar disponible? El startup se roba el mes pasado, así que estoy libre. ¿Podría empezar de inmediato? Apenas me digan. Antes de terminar, ¿qué te motiva en este puesto particular? Que combina análisis con comunicación de datos. Me gusta cuando lo que hago se usa de verdad para tomar decisiones y no queda como un informe que nadie lee. También me atrae que el equipo parezca abierto a probar cosas nuevas. ¿Cómo manejas los plazos ajustados? Divido el trabajo en partes pequeñas y reviso si algo se complica y priorizo lo que más impacto tiene. Prefiero entregar algo sencillo y bien hecho, que algo ambicioso a medias. Perfecto. Con eso terminamos. Te comunicaremos el resultado en los próximos días. Muchas gracias que le vaya bien.",
+ "model": "small",
+ "compute_type": "float32",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 52.044442099984735,
+ "audio_s": 111.1466875,
+ "sec_per_audio_min": 28.09500306519782,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "interview_05",
+ "task": "interview",
+ "level": "L0"
+}

@@ -1,0 +1,16 @@
+{
+ "text": "Hola, bienvenida, voy a hacerte algunas preguntas, tomate el tiempo que necesites, empecemos con lo básico. ¿Cuándo empeces ganar? ¿Cuánto esperas ganar? Oh, la gracia es bueno, la verdad es que yo busco mi primer trabajo estále, así que mi pretensión sería de dos mil ochocientos soles al mes. Si es un poco menos, pero hay una oportunidad crecer también lo consideraría. Entiendo, ¿qué herramientas conoces? En la universidad, usamos mucho excel contra las dinámicas y macros. También aprendí a ser gráficos en favor, bien un curso y estoy perdicando consultas de SQL de como unos ejercicios en línea. ¿Has trabajado antes en algo relacionado? Sí, trabajé como practicantes sistemas en una clínica, apoyando el área de reporte. Y salada de programas, revisada a las computadoras, y a veces ayuda a ordenar los reportes de atención a pacientes. ¿Cuánto duro la experiencia? Fue un año. Empecé el último ciclo de mi carrera y me quedé unos meses más después de agresar, porque el jefe de la área me enseñó muchas cosas. Genial, y sobre el idioma, hablo a inglés, mi ingresa es básico, la verdad. Entiendo a palar a suelta si puedo llar correos sencillos, pero no podría tener una conversación fluida. Quiero empezar un curso apenas, tengo un ingreso fijo, muy honesto, agradece, última pregunta. En cuanto tiempo podrías empezar, todavía tengo que entrenar en informe final de mi tínica y cerrar algunos pendientes, así que necesitaría un mes para empezar. Última cosa, ¿por qué crees que sería una buena opción para este puesto? Porque prendo rápido y no me da vergüenza a preguntar cuando no entiendo algo, en la clínica siempre me da notarías nuevas y las iba resolviendo. A veces buscando tutoriales este tarde. Tengo muchas ganas de mostrar lo que puedo hacer. Tienes alguna pregunta para nosotros si quisieros saber si trabajos presencial o híbrido. Perfecto notado, muchas gracias, te avisaremos los resultados por correo. Gracias a ustedes.",
+ "model": "base",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 13.723752900026739,
+ "audio_s": 111.7653125,
+ "sec_per_audio_min": 7.3674484111660705,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "interview_03",
+ "task": "interview",
+ "level": "L0"
+}

@@ -1,0 +1,16 @@
+{
+ "text": "picaría y emburguizaría, la grano, buenas noches qué desea ordenar, buenas noches quisieron una pizza, dos papas fritas, tres gaseosas, no perdón, mejor dos pizzas aunque somos seis en la reunión, de acuerdo, dos pizzas y dos papas y tres gaseosas, en qué en qué pedido califica el comodo familiar, que tienen diez soles de descuento, ¿la aplicamos? Sí, claro, aplíquelo, hay que hacer algo más, consulta, ¿las papas tienen con salsas? Sí, incluyen salsas de la casa, perfecto, muchas gracias a los chicos, les encanta, no, ya lo registré, ¿cuál es la dirección de entrega? Que hay en las vergoñas 178, el segundo piso, edificio gris, hay un taller mecánico en la planta baja, le recuerdo que repartidor no puedo subir los pisos altos, sino hay portero por una cuestión de seguridad, alguien podría bajar a recibir, sí, no hay problema, mi hermana bajará, perfecto, lo mandamos junto la dirección, sí, perfecto, ¿cómo pago? Bueno, pago con tarjeta, todo bien, gracias, es que tenemos invitados, si no tenemos, no queremos que falte nada, entendido, lo preparamos todos, si repartidor lleva POS, déjame hacer cálculo, el total es 106 soles, está bien, gracias, ¿cuando tarda? 40 minutos, ok, muchas gracias",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 23.524476299993694,
+ "audio_s": 83.84,
+ "sec_per_audio_min": 16.835264527667242,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_02",
+ "task": "order",
+ "level": "L2"
+}

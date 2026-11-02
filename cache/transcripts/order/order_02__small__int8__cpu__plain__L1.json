@@ -1,0 +1,16 @@
+{
+ "text": "¿Pixaría? ¿Y hamburguesaría? ¿La grano? ¿Uas noches? ¿Qué desea arrendar? ¿Uas noches? ¿Quisiera una pizza, dos papas fritas, tres gaseosas? No, perdón, mejor dos pizzas. Aunque somos seis en la reunión. ¿De acuerdo? Dos pizzas y dos papas y tres gaseosas. ¿En qué pedido califica el comodo familiar? ¿Qué tienen? ¿Diesos les descuento? ¿Lo aplicamos? Sí, claro, aplíquelo. ¿Hay que hacer algo más? ¿Consulta? ¿Las papas vienen con salsa? Sí, incluyen salsas desde la casa. Perfecto, muchas gracias a los chicos, les encanto. No, ya lo registré. ¿Cuál es la dirección de entrega? Calle a las begonias 178. El segundo piso, el edificio Gris. Hay un taller mecánico en la planta de baja. Le recuerdo que tras partidor no puedo subir los pisos altos, sino hay portero por una cuestión de seguridad. ¿Alguien podría bajar a recibir? Sí, no hay problema, mi hermana bajará. Perfecto, lo levantamos junto de la dirección. Sí, perfecto. ¿Cómo pago? Bueno, pago con tarjeta. Todo bien, gracias. Es que tenemos invitados y no queremos que falten nada. Entendido, lo preparamos todos. Si el repartidor lleva POS, déjenme hacer el cálculo. El total es 166 solos. Está bien, gracias. ¿Cuando tarda? Como 40 minutos. OK, muchas gracias.",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 23.891701200045645,
+ "audio_s": 83.84,
+ "sec_per_audio_min": 17.098068606902896,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_02",
+ "task": "order",
+ "level": "L1"
+}

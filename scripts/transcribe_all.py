@@ -13,7 +13,7 @@ from pathlib import Path
 from src import asr, audio
 from src.engine import load_config
 
-AUDIO_EXT = {".wav", ".mp3", ".m4a", ".ogg", ".opus", ".flac"}
+AUDIO_EXT = {".wav", ".mp3", ".m4a", ".mp4", ".aac", ".ogg", ".opus", ".flac"}
 
 
 def main():
@@ -42,6 +42,9 @@ def main():
                 for clip in clips:
                     base = audio.load_audio(str(clip), cfg["ladder"]["target_sr"])
                     for level in a.levels:
+                        pre = f"{clip.stem}__{model}__{ct}__{dev}__{'gloss' if a.glossary else 'plain'}__{level}.json"
+                        if dev != "auto" and (outdir / pre).exists():
+                            continue  # ya transcrito: permite retomar
                         x, info = audio.apply_level(level, base, cfg)
                         tr = asr.transcribe(x, cfg, model, ct, dev, a.glossary)
                         tr.update(clip=clip.stem, task=a.task, level=level, **{k: v for k, v in info.items() if k != "level"})

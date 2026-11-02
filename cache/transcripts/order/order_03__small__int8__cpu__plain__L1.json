@@ -1,0 +1,16 @@
+{
+ "text": "Hola, ¿qué tal? Buenas tardes, hamburgueserías, San Mateo. Buenas tardes, pero ¿qué es el pedido? Buenas tardes, el pedido es para almorzar en la oficina, quiero una hamburguesa y ensalada y una porción de papas. Está bien, lo confirmo. Sí, por favor, y el heredero es aparte, muchas gracias. ¿Prefirme la hamburguesa con todas las cremas o algún especial? Perfecto, punto medio entonces. ¿Quiere que le agregamos alguna bebida? No, no, gracias. ¿Anotado cuál es su dirección? Jirón Guaya, 456. En el centro. Preguntes por la recepción de Marsella. Perfecto, Jirón Guaya. ¿Cómo será el pago en YAP, básicamente? Una pregunta, necesitas cubiertos, escartables o servilletas? Sí, por favor, más que todos servilletas. Sí, perfecto, las incluimos, le repito el pedido. Una hamburguesa y una ensalada con heredero aparte y unas papas. Está bien, sí. Claro, el total sería 47 soles. Entendido, el agua del pago en YAP ahora mismo. ¿Está listo en media hora? Sí, en 25 minutos la llega. Gracias por su preferencia.",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 25.44994009984657,
+ "audio_s": 69.44,
+ "sec_per_audio_min": 21.990155616226875,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_03",
+ "task": "order",
+ "level": "L1"
+}

@@ -1,0 +1,16 @@
+{
+ "text": "Buenos días, gracias por venir. Para empezar, cuéntame un poco de ti. ¿Qué es lo que has hecho hasta ahora? Bueno, buenos días, gracias a ustedes. Soy ingeniero estadístico, siempre me ha gustado trabajar con números. Mi último puesto fue en la lista de datos en una financiera de Mediana, así que estuve hasta el mes pasado, bueno cuando terminó mi contrato. ¿Cuánto tiempo de experiencia tienes en total trabajando con datos? Tengo cuatro años de experiencia, contando mis prácticas y empleos formales. Al principio hacía reportes sencillos y poco a poco fue en los proyectos más grandes como modelos para predecir la amorosidad de los clientes. Entiendo, ¿qué herramientas manejas al día a día? Uso Python para el import y transformar los datos, sobre todo la librería pandes y busco la base con SQL prácticamente todos los días. Los tableros para la gerencia de los armados en Power BI porque a ellos les gusta ver todos los gráficos. Perfecto, esta posición tiene contacto con proveedores de otros países. ¿Cómo sea tu inglés? Diría que mi inglés es intermedio, puedo leer documentación técnicas sin problema y entiendo cuando me hablan, pero para conversar fluido todavía me cuesta un poco, estoy llevando clases los sábados para mejorar. Muy bien, ahora el tema económico, ¿cuál es tu pretensión salarial? Estoy pensando en unos 6.500 solos al mes, sé que es un poco más lo que ganaba antes, pero creo que es lo que ha aprendido, pueda aportar más y si hay beneficios adicionales los podemos conversar. Lo tomaremos en cuenta. ¿Cuánto podrías incorporarte? Debo dar un previsto en un trabajo temporal que tengo ahorita, así que podría empezar en dos semanas. Antes de cerrar, ¿por qué te interesa trabajar con nosotros? Me llamó la atención que la empresa trabaja con proyectos reales y dan un espacio para proponer ideas. Busco un lugar donde pueda aprender de gente con más trayectoria, pero también asumir responsabilidad. Además, el horario y ubicación me quedan bastante cómodos. ¿Cuál dirías que es tu mayor fortaleza? Bueno, soy vasentro ordenado, me gusta explicar las cosas con calma, cuando algo sale mal, prefiero revisar qué pasó a paso a paso y eso me ha ayudado a llevarme bien con los equipos. Excelente, eso sería todo por mi parte. Te escriberemos esta semana para contarte cómo sigue el proceso.",
+ "model": "small",
+ "compute_type": "float32",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 63.788698100019246,
+ "audio_s": 142.2293125,
+ "sec_per_audio_min": 26.909515476995328,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "interview_01",
+ "task": "interview",
+ "level": "L0"
+}

@@ -1,0 +1,16 @@
+{
+ "text": "Ok, hamburgues, hamburgues haría el sabor una tarde en el que pueda ayudarte. Buenas tardes quisieron pedirle del lluvio y por favor, claro que sí, déjame que sea ordenar. Quiero dos hamburguesas, una gaseosa, ah espera, mejor tres hamburguesas y que viene a mi prima en la casa y las gaseosas que sean dos en vez de una. Perfecto, entonces tres hamburgues y dos gaseosas, ¿no? De esa agregar algo más. No gracias, si está bien. Tiene alguna duda sobre el pedillo del lluvio y una consulta, tiene alguna promoción de hoy, mi primo siempre me pide que pregunte. Hoy no tenemos promociones lamentablemente, pero el delivery a su zona no tiene costo disonal. Ah, qué bien. ¿A qué dirección enviamos el pedido? Ah, venía a los olivos 245. ¿Cómo va a pagar? Bueno, con mi entera digital. Ok, le confirme el pedido, tres hamburguesas y dos gaseosas para entregar en la venía a los olivos. El pago en efectivo es correcto, sí, correcto. No sé, ojalá llegue caliente y ya tenemos hambre todos. No sé, preocupen. Me pagamos todo en muchas técnicas para que llegue en un buen estado. Perfecto, 66. ¿Cuánto demoran más o menos? unos 30 minutos por su pedido que lo disfrute. Gracias a ustedes.",
+ "model": "base",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 7.789198600221425,
+ "audio_s": 73.856,
+ "sec_per_audio_min": 6.327880145327199,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_01",
+ "task": "order",
+ "level": "L0"
+}

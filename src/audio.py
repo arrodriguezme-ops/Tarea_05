@@ -1,4 +1,5 @@
 """Carga de audio y escalera de degradacion L0-L3 (reproducible, sin UI)."""
+import shutil
 import subprocess
 import tempfile
 from pathlib import Path
@@ -7,9 +8,18 @@ import numpy as np
 from scipy import signal
 
 
+def ffmpeg_exe() -> str:
+    """ffmpeg del PATH o, si no hay, el binario que trae imageio-ffmpeg."""
+    found = shutil.which("ffmpeg")
+    if found:
+        return found
+    import imageio_ffmpeg
+    return imageio_ffmpeg.get_ffmpeg_exe()
+
+
 def load_audio(path: str, sr: int = 16000) -> np.ndarray:
     """Decodifica cualquier formato a mono float32 con ffmpeg."""
-    cmd = ["ffmpeg", "-v", "error", "-i", str(path), "-ac", "1", "-ar", str(sr), "-f", "f32le", "-"]
+    cmd = [ffmpeg_exe(), "-v", "error", "-i", str(path), "-ac", "1", "-ar", str(sr), "-f", "f32le", "-"]
     out = subprocess.run(cmd, capture_output=True, check=True).stdout
     return np.frombuffer(out, dtype=np.float32).copy()
 
@@ -26,7 +36,7 @@ def _codec_roundtrip(x: np.ndarray, sr: int, codec: str, bitrate: str) -> np.nda
     with tempfile.TemporaryDirectory() as d:
         raw, enc = Path(d) / "in.f32", Path(d) / "enc.ogg"
         raw.write_bytes(x.astype(np.float32).tobytes())
-        subprocess.run(["ffmpeg", "-v", "error", "-f", "f32le", "-ar", str(sr), "-ac", "1",
+        subprocess.run([ffmpeg_exe(), "-v", "error", "-f", "f32le", "-ar", str(sr), "-ac", "1",
                         "-i", str(raw), "-c:a", codec, "-b:a", bitrate, str(enc)], check=True)
         return load_audio(str(enc), sr)
 

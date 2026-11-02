@@ -1,0 +1,16 @@
+{
+ "text": "hamburguesa, hambursaría el sabor, buenas tardes en que pueda ayudarte. Buenas tardes quisieron pedido del livery por favor. Claro que si, dígame que se ordenar. Quiero dos hamburguesas, una gaseosa, ah espera mejor tres hamburguesas y que viene a mi primo en la casa y las gaseosas que sean dos en vez de una. Perfecto entonces tres hamburguesas y dos gaseosas ¿no? ¿desagregar algo más? No gracias, si está bien. ¿Tienen alguna duda sobre el pedido del livery? Una consulta, ¿tienen alguna promoción de hoy? Mi primo siempre me pide que pregunte. Hoy no tenemos promociones lamentablemente, pero el del livery a su zona no tiene costo adicional. Ah, qué bien. ¿A qué dirección enviamos el pedido? Ah, venía a los olivos 245. ¿Ha notado? ¿Cómo va a pagar? Bueno, comitera digital. Ok, le confirmo el pedido, tres hamburguesas y dos gaseosas para entregar en la venía de los olivos. El pago en efectivo ¿es correcto? Sí, correcto. No sé, ojalá llegue caliente. Ya tenemos hambre todos. No se preocupe, empacamos todas las bolsas técnicas para que llegue en un buen estado. Perfecto, 66, ¿cuánto demora más o menos? Unos 30 minutos, gracias por su pedido. Que lo disfrute. Gracias a ustedes.",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 70.04660929972306,
+ "audio_s": 73.856,
+ "sec_per_audio_min": 56.90528268500032,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_01",
+ "task": "order",
+ "level": "L0"
+}

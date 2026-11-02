@@ -1,0 +1,16 @@
+{
+ "text": "Hola, ¿qué tal? Buenas tardes, hamburgueserías, San Mateo. Buenas tardes, ¿para qué es el pedido? Buenas tardes, el pedido es para almorzar hoy en la oficina, que era una hamburguesa y ensalada hay una porcenta de papas. Está bien, lo confirma. Sí, por favor, y el aire es su aparte, muchas gracias. Prefieren la hamburguesa con todas las cremas o alguna especial, como yo en esa ketchup y nada más la verdad. Perfecto, punto de medio entonces. ¿Quién que le agregamos a una bebida? No, no, no, gracias. Anotado, ¿cuál es su dirección? Jiron Guaya, 456, en el centro, preguntas por la recepción de Marcelo. Perfecto, Jiron Guaya. ¿Cómo será el pago en ya pebo básicamente? Una pregunta, ¿nacita cubiertos escartables o servilletas? Sí, por favor. Más que todas servilletas. Sí, perfecto. Las incluimos el repiro del pedido, una hamburguesa no ensalada con aire su aparte y unas papas. ¿Está bien? Sí, claro, el total sería en 47 soles. Entendido el lago el pago en ya pebo ahora mismo. Está listo en media hora. Sí, 25 minutos la llega. Gracias por su preferencia.",
+ "model": "base",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 16.50814939988777,
+ "audio_s": 69.44,
+ "sec_per_audio_min": 14.263953974557406,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_03",
+ "task": "order",
+ "level": "L0"
+}

@@ -1,0 +1,16 @@
+{
+ "text": "Buenas noches el sabor, le ayudo, si quiero dos pizzas y una ensalada, por favor, ok, lo confirmo algo más, no, y no más, mejor quítela ensalada que ya no la voy a necesitar, solo a dos pizzas, listo solo a dos pizzas, le comento que tenemos descuento 10% por pedidos de pizza, aquí me la aplica, entonces, pregunta, las pizzas vienen con el bordero de hielo, o esos se cobra parte, el bordero de hielo es abcional, pero se lo regalamos por ser cliente frequente, que me able, entonces si, con bordero de hielo, por favor, mi familia Goladora, por supuesto la dirección, venir equipa 1220.004, cerca del parque de las muertes azul, ha notado, pague inefectivo, pago con, si, en efectivo, justo tengo vietas de 50, le repito el pedio 2 pizzas con el descuento aplicado, correcto, correcto y por favor que las cortan en nuestros pedazos que mis aurinos son muy exigentes, les cuide bien encortadas de forma tradicional en 8% cada 1 perfecto entonces perfecto el total sería 77 soles, estaba bien gracias con lo tiempo cerca de 35 minutos y que tenga buena noche igualmente adiós",
+ "model": "base",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 21.27172529976815,
+ "audio_s": 69.3973125,
+ "sec_per_audio_min": 18.39125280227659,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_04",
+ "task": "order",
+ "level": "L0"
+}
