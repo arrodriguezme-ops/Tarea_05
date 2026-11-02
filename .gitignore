@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+data/audio/*
+!data/audio/.gitkeep
+*.wav
+*.mp3
+*.m4a
+*.opus
+models/
+.streamlit/secrets.toml

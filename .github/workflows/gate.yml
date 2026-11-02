@@ -1,0 +1,12 @@
+name: regression-gate
+on: [push, pull_request]
+jobs:
+  gate:
+    runs-on: ubuntu-latest   # sin GPU: solo evalua transcripciones en cache, nunca transcribe
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install numpy scipy jiwer PyYAML pandas pytest
+      - run: python -m pytest -q
+      - run: python -m scripts.evaluate --extractor rules --gate
