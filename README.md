@@ -47,6 +47,19 @@ python -c "import sys, src.engine; assert not {'streamlit','gradio'} & set(sys.m
 - **Validación aritmética:** `Σ cantidad·precio − promoción` vs `total_dicho` (tolerancia en config). **Diagnóstico:** si las lecturas en palabras difieren en una sola palabra con distancia de edición relativa ≤ umbral → `error_asr`; si no → `error_hablante`. Se reporta cuántas veces acierta contra las trampas plantadas (`scripts/evaluate.py` → tabla de atrapados/perdidos/falsas alarmas por nivel).
 - **Regression gate:** `.github/workflows/gate.yml` recalcula métricas desde el caché; los runners no tienen GPU, así que nunca transcribe.
 
+## Corpus y desviaciones declaradas
+| Clip | Duración (s) | | Clip | Duración (s) |
+|---|---|---|---|---|
+| interview_01 | 142 | | order_01 | 74 |
+| interview_02 | 131 | | order_02 | 84 |
+| interview_03 | 112 | | order_03 | 69 |
+| interview_04 | 135 | | order_04 | 69 |
+| interview_05 | 111 | | order_05 | 72 |
+
+- **Duración de las llamadas de venta (≈ 1,2–1,4 min, menos de los 2–4 min pedidos):** se grabaron como *llamadas rápidas* de pedido a domicilio, que es el caso real del dominio restaurante: el cliente dicta el pedido, la dirección y el pago, y el vendedor confirma el total en poco más de un minuto. Alargarlas con conversación de relleno habría hecho el corpus menos realista sin agregar campos ni trampas. Consecuencia: ~5 min de audio de llamadas en total (frente a los 16–20 previstos), por lo que las métricas de la Tarea 2 tienen aún menos poder estadístico y sus intervalos de confianza son muy anchos.
+- **Entrevistas (1,85–2,4 min):** tres de las cinco cumplen los 2 minutos; `interview_03` (112 s) e `interview_05` (111 s) quedan ligeramente por debajo.
+- Los hablantes no leyeron los guiones palabra por palabra; las transcripciones de referencia se corrigen escuchando el audio (ver `data/ground_truth/review/`).
+
 ## Resultados
 _(Pendiente: pegar aquí las tablas de `results/results_rules.json` / app, con IC al 95 % por bootstrap. Con ~5 clips por tarea los intervalos serán anchos; dilo explícitamente.)_
 
