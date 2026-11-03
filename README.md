@@ -60,8 +60,42 @@ python -c "import sys, src.engine; assert not {'streamlit','gradio'} & set(sys.m
 - **Entrevistas (1,85–2,4 min):** tres de las cinco cumplen los 2 minutos; `interview_03` (112 s) e `interview_05` (111 s) quedan ligeramente por debajo.
 - Los hablantes no leyeron los guiones palabra por palabra; las transcripciones de referencia se corrigen escuchando el audio (ver `data/ground_truth/review/`).
 
-## Resultados
-_(Pendiente: pegar aquí las tablas de `results/results_rules.json` / app, con IC al 95 % por bootstrap. Con ~5 clips por tarea los intervalos serán anchos; dilo explícitamente.)_
+## Resultados (PROVISIONALES)
+> Calculados en **CPU** (sin GPU local) con referencias aún sin corregir escuchando el audio; en los pedidos el WER mide también cuánto se desvió la lectura del guion. La comparación en GPU (`large-v3`, `float16`/`int8`, VRAM) se corre en `notebooks/colab_gpu.ipynb`. Con 5 clips por tarea los IC son anchos.
+
+### Tarea 1 — Entrevistas
+| modelo | precisión | dispositivo | glosario | nivel | WER [IC95] | CER | s/min audio | exactitud registro |
+|---|---|---|---|---|---|---|---|---|
+| base | int8 | cpu | sin | L0 | 0.242 [0.229, 0.257] | 0.121 | 7.0 | 0.57 |
+| small | float32 | cpu | sin | L0 | 0.171 [0.144, 0.196] | 0.091 | 48.9 | 0.73 |
+| small | int8 | cpu | sin | L0 | 0.171 [0.149, 0.195] | 0.092 | 16.8 | 0.73 |
+| small | int8 | cpu | con | L0 | 0.156 [0.142, 0.172] | 0.084 | 25.0 | 0.83 |
+
+- **Precisión:** `int8` vs `float32` (small, CPU): 4.5 % de palabras distintas entre ambos textos, 0 de 5 clips idénticos; `int8` ≈ 2.9× más rápido (17 vs 49 s/min).
+- **Glosario** (`hotwords`, diferencia pareada con/sin): ΔWER -0.016 (IC95 [-0.041, +0.005], incluye 0); Δexactitud del registro +0.10 (IC95 [+0.03, +0.17]; el bootstrap con n=5 es optimista).
+- **WER no predice el registro:** `interview_04` tiene WER 0,15 (de los más bajos) y el sueldo sale mal (300000 en vez de 12000) por una trampa del guion; en la muestra actual no hay ningún clip con registro perfecto, así que falta el caso «WER alto + registro perfecto».
+
+### Tarea 2 — Pedidos
+| modelo | precisión | dispositivo | glosario | nivel | WER [IC95] | CER | s/min audio | exactitud registro |
+|---|---|---|---|---|---|---|---|---|
+| base | int8 | cpu | sin | L0 | 0.496 [0.443, 0.566] | 0.327 | 10.5 | 0.28 |
+| small | int8 | cpu | sin | L0 | 0.410 [0.342, 0.488] | 0.304 | 26.1 | 0.48 |
+| small | int8 | cpu | sin | L1 | 0.431 [0.365, 0.512] | 0.310 | 31.4 | 0.36 |
+| small | int8 | cpu | sin | L2 | 0.437 [0.374, 0.509] | 0.313 | 19.0 | 0.48 |
+| small | int8 | cpu | sin | L3 | 0.485 [0.417, 0.565] | 0.338 | 18.7 | 0.32 |
+
+Escalera de degradación y validación aritmética (`small`, `int8`, reglas):
+
+| nivel | WER | exactitud campos | trampas atrapadas | perdidas | falsas alarmas | diagnóstico correcto |
+|---|---|---|---|---|---|---|
+| L0 | 0.410 | 0.48 | 2/3 | 1 | 1 | 2/3 |
+| L1 | 0.431 | 0.36 | 3/3 | 0 | 0 | 3/3 |
+| L2 | 0.437 | 0.48 | 2/3 | 1 | 1 | 2/3 |
+| L3 | 0.485 | 0.32 | 3/3 | 0 | 0 | 3/3 |
+
+SNR medida en L3: 10,00 dB (objetivo 10 dB, ruido rosa sintético).
+
+Reproducir: `python -m scripts.evaluate --extractor rules && python -m scripts.analysis`.
 
 ## Limitaciones
 - Muestra muy pequeña (4–5 clips por tarea): sirve para ver efectos, no para estimar con precisión.

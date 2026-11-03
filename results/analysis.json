@@ -1,0 +1,133 @@
+{
+ "wer_vs_registro": {
+  "interview": {
+   "mediana_wer": 0.17866004962779156,
+   "wer_alto_registro_perfecto": [],
+   "wer_bajo_registro_roto": [
+    {
+     "clip": "interview_05",
+     "model": "small",
+     "compute_type": "float32",
+     "glosario": false,
+     "level": "L0",
+     "wer": 0.12538226299694188,
+     "record_acc": 0.8333333333333334,
+     "campos_mal": [
+      "ultimo_puesto"
+     ]
+    },
+    {
+     "clip": "interview_05",
+     "model": "small",
+     "compute_type": "int8",
+     "glosario": true,
+     "level": "L0",
+     "wer": 0.1345565749235474,
+     "record_acc": 0.8333333333333334,
+     "campos_mal": [
+      "ultimo_puesto"
+     ]
+    },
+    {
+     "clip": "interview_05",
+     "model": "small",
+     "compute_type": "int8",
+     "glosario": false,
+     "level": "L0",
+     "wer": 0.1345565749235474,
+     "record_acc": 0.8333333333333334,
+     "campos_mal": [
+      "ultimo_puesto"
+     ]
+    }
+   ],
+   "corr_pearson_wer_exactitud": -0.5653182605710061
+  },
+  "order": {
+   "mediana_wer": 0.4354243542435424,
+   "wer_alto_registro_perfecto": [],
+   "wer_bajo_registro_roto": [
+    {
+     "clip": "order_04",
+     "model": "small",
+     "compute_type": "int8",
+     "glosario": false,
+     "level": "L0",
+     "wer": 0.3145539906103286,
+     "record_acc": 0.2,
+     "campos_mal": [
+      "items",
+      "promocion",
+      "direccion_entrega",
+      "total_dicho"
+     ]
+    },
+    {
+     "clip": "order_05",
+     "model": "small",
+     "compute_type": "int8",
+     "glosario": false,
+     "level": "L1",
+     "wer": 0.34309623430962344,
+     "record_acc": 0.0,
+     "campos_mal": [
+      "items",
+      "promocion",
+      "direccion_entrega",
+      "metodo_pago",
+      "total_dicho"
+     ]
+    },
+    {
+     "clip": "order_05",
+     "model": "small",
+     "compute_type": "int8",
+     "glosario": false,
+     "level": "L0",
+     "wer": 0.3472803347280335,
+     "record_acc": 0.4,
+     "campos_mal": [
+      "items",
+      "direccion_entrega",
+      "total_dicho"
+     ]
+    }
+   ],
+   "corr_pearson_wer_exactitud": 0.41995248147767844
+  }
+ },
+ "cambio_de_texto": [
+  {
+   "a": "float32/cpu",
+   "b": "int8/cpu",
+   "clips_identicos": 0,
+   "n": 5,
+   "diferencia_media_palabras_pct": 4.491601951320984,
+   "speedup_sec_por_min": {
+    "a": 48.87419902991893,
+    "b": 16.794578064650466
+   }
+  }
+ ],
+ "glosario": {
+  "n_clips": 5,
+  "delta_wer_media": -0.015776672601236146,
+  "delta_wer_ic95": [
+   -0.04146051964970689,
+   0.004522664483781835
+  ],
+  "delta_exactitud_media": 0.1,
+  "delta_exactitud_ic95": [
+   0.033333333333333326,
+   0.16666666666666669
+  ],
+  "terminos_del_glosario_en_texto": {
+   "plano": 17,
+   "con_glosario": 20
+  },
+  "lectura": {
+   "wer": "IC incluye 0: sin efecto demostrable",
+   "exactitud": "IC excluye 0 (con 5 clips es optimista)"
+  }
+ }
+}

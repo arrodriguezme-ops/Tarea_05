@@ -82,6 +82,16 @@ with tab3:
         if len(per):
             st.dataframe(per.sort_values("WER"), use_container_width=True)
             st.caption("Busque: un clip con WER alto y registro perfecto, y otro con WER bajo y registro roto.")
+        ap = Path(CFG["paths"]["results_dir"]) / "analysis.json"
+        if ap.exists():
+            an = json.loads(ap.read_text(encoding="utf-8"))
+            st.subheader("Analisis: casos extremos, precision y glosario")
+            for task, d in an["wer_vs_registro"].items():
+                st.markdown(f"**{task}** - correlacion WER vs exactitud del registro: `{d['corr_pearson_wer_exactitud']}`")
+                st.write("WER alto con registro perfecto:", d["wer_alto_registro_perfecto"] or "ninguno en esta muestra")
+                st.write("WER bajo con registro roto:", d["wer_bajo_registro_roto"] or "ninguno en esta muestra")
+            st.write("Cambio de texto entre precisiones", pd.DataFrame(an["cambio_de_texto"]))
+            st.write("Efecto del glosario (diferencia pareada, IC95 bootstrap)", an["glosario"])
         st.subheader("Tarea 2 - Pedidos")
         st.dataframe(summary_df(summary, "order"), use_container_width=True)
         od = [s for s in summary if s["task"] == "order"]
