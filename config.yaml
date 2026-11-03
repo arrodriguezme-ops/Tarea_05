@@ -96,8 +96,8 @@ order:
   tolerance_sol: 0.5
 
 llm:
-  provider: anthropic
-  model: claude-haiku-5-5
+  provider: google          # google | anthropic
+  model: gemini-2.5-flash   # ajuste al modelo disponible en su cuenta de AI Studio
   max_tokens: 800
   temperature: 0
   system_prompt: |

@@ -4,22 +4,44 @@ import os
 import re
 
 
-def extract_llm(transcript: str, schema: str, cfg: dict) -> dict:
-    from dotenv import load_dotenv
+def _call_anthropic(prompt: str, lcfg: dict) -> str:
     import anthropic
-
-    load_dotenv()
     if not os.getenv("ANTHROPIC_API_KEY"):
         raise RuntimeError("Falta ANTHROPIC_API_KEY en .env")
-    lcfg = cfg["llm"]
-    client = anthropic.Anthropic()
-    msg = client.messages.create(
+    msg = anthropic.Anthropic().messages.create(
         model=lcfg["model"], max_tokens=lcfg["max_tokens"], temperature=lcfg["temperature"],
-        system=lcfg["system_prompt"],
-        messages=[{"role": "user",
-                   "content": f"{lcfg['schemas'][schema]}\n\nTRANSCRIPCION:\n{transcript}"}],
-    )
-    raw = "".join(b.text for b in msg.content if b.type == "text")
+        system=lcfg["system_prompt"], messages=[{"role": "user", "content": prompt}])
+    return "".join(b.text for b in msg.content if b.type == "text")
+
+
+def _call_google(prompt: str, lcfg: dict) -> str:
+    """Gemini via REST (Google AI Studio). La clave va en el header, nunca en la URL."""
+    import urllib.request
+    key = os.getenv("GOOGLE_API_KEY")
+    if not key:
+        raise RuntimeError("Falta GOOGLE_API_KEY en .env")
+    body = {"systemInstruction": {"parts": [{"text": lcfg["system_prompt"]}]},
+            "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+            "generationConfig": {"temperature": lcfg["temperature"], "maxOutputTokens": lcfg["max_tokens"],
+                                 "responseMimeType": "application/json"}}
+    req = urllib.request.Request(
+        f"https://generativelanguage.googleapis.com/v1beta/models/{lcfg['model']}:generateContent",
+        data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": key})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        data = json.load(r)
+    return "".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"])
+
+
+PROVIDERS = {"anthropic": _call_anthropic, "google": _call_google}
+
+
+def extract_llm(transcript: str, schema: str, cfg: dict) -> dict:
+    from dotenv import load_dotenv
+
+    load_dotenv()
+    lcfg = cfg["llm"]
+    prompt = "\n\n".join([lcfg["schemas"][schema], "TRANSCRIPCION:", transcript])
+    raw = PROVIDERS[lcfg["provider"]](prompt, lcfg)
     m = re.search(r"\{.*\}", raw, re.S)
     if not m:
         raise ValueError(f"El LLM no devolvio JSON: {raw[:200]}")
