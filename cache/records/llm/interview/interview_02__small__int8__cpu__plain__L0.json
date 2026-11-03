@@ -1,0 +1,36 @@
+{
+ "fields": {
+  "anios_experiencia": 7,
+  "ultimo_puesto": "desarrollador backend",
+  "tecnologias": [
+   "Python",
+   "Docker",
+   "GT",
+   "AWS"
+  ],
+  "pretension_salarial": 2500,
+  "disponibilidad": "inmediata",
+  "nivel_ingles": "avanzado"
+ },
+ "evidence": {
+  "anios_experiencia": "En total, tengo 7 años de experiencia profesional, casi todo en desarrollo de software.",
+  "ultimo_puesto": "Trabajé con un desarrollador backend en una empresa de transporte durante casi tres años en el último puesto.",
+  "tecnologias": [
+   "Principalmente Python",
+   "todo lo desplegábamos con Docker",
+   "llevábamos el control de versiones con GT",
+   "los servicios que corrían en AWS"
+  ],
+  "pretension_salarial": "Pretensión es 2500 dólares mensuales",
+  "disponibilidad": "puedo empezar inmediato, sin ningún problema.",
+  "nivel_ingles": "Tengo un nivel avanzado de inglés"
+ },
+ "verified": {
+  "anios_experiencia": "verificado",
+  "ultimo_puesto": "verificado",
+  "tecnologias": "verificado",
+  "pretension_salarial": "verificado",
+  "disponibilidad": "verificado",
+  "nivel_ingles": "verificado"
+ }
+}

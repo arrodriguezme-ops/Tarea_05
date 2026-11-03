@@ -1,0 +1,37 @@
+{
+ "fields": {
+  "items": [
+   {
+    "product": "pizzas",
+    "quantity": 2,
+    "unit_price": null
+   }
+  ],
+  "promocion": "descuento de 10% por pedidos de pizza",
+  "direccion_entrega": "Arequipa 12004",
+  "metodo_pago": "efectivo",
+  "total_dicho": 77
+ },
+ "evidence": {
+  "items": [
+   "solo las dos pizzas"
+  ],
+  "promocion": "descuento de 10% por pedidos de pizza",
+  "direccion_entrega": "Equipa 12004",
+  "metodo_pago": "en efectivo",
+  "total_dicho": "77 soles"
+ },
+ "verified": {
+  "items": "verificado",
+  "promocion": "verificado",
+  "direccion_entrega": "verificado",
+  "metodo_pago": "verificado",
+  "total_dicho": "verificado"
+ },
+ "validation": {
+  "status": "no_validable",
+  "computed_total": null,
+  "said_total": 77,
+  "diagnosis": null
+ }
+}

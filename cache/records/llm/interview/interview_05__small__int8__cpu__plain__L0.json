@@ -1,0 +1,36 @@
+{
+ "fields": {
+  "anios_experiencia": 5,
+  "ultimo_puesto": "científico de datos",
+  "tecnologias": [
+   "Python",
+   "pandas",
+   "streamlit",
+   "git"
+  ],
+  "pretension_salarial": 7800,
+  "disponibilidad": "inmediata",
+  "nivel_ingles": "intermedio"
+ },
+ "evidence": {
+  "anios_experiencia": "5 años con la experiencia en total",
+  "ultimo_puesto": "Me desempeñé como científico de datos en un startup de comercio electrónico",
+  "tecnologias": [
+   "Todo lo hago en Python",
+   "con pandas para manipular las bases de datos",
+   "pequeñas aplicaciones con streamlit",
+   "ordenado con git"
+  ],
+  "pretension_salarial": "Mi pretensión salarial es 7.800 soles al mes.",
+  "disponibilidad": "Podría empezar de inmediato?",
+  "nivel_ingles": "Mi inglés es intermedio"
+ },
+ "verified": {
+  "anios_experiencia": "verificado",
+  "ultimo_puesto": "verificado",
+  "tecnologias": "verificado",
+  "pretension_salarial": "verificado",
+  "disponibilidad": "verificado",
+  "nivel_ingles": "verificado"
+ }
+}

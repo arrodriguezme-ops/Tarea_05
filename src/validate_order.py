@@ -30,6 +30,11 @@ def diagnose(said: float, computed: float, cfg: dict) -> str:
 def validate(record: dict, cfg: dict) -> dict:
     """record: {campo: valor}. Devuelve estado, total calculado y diagnostico."""
     items, said = record.get("items"), record.get("total_dicho")
+    catalog = cfg["order"]["catalog"]
+    items = [dict(it, unit_price=it.get("unit_price") if it.get("unit_price") is not None
+                  else catalog.get(it.get("product"), {}).get("price")) for it in (items or [])]
+    if any(it.get("quantity") is None or it["unit_price"] is None for it in items):
+        return {"status": "no_validable", "computed_total": None, "said_total": said, "diagnosis": None}
     if not items or said is None:
         return {"status": "no_validable", "computed_total": None, "said_total": said, "diagnosis": None}
     computed = compute_total(items, record.get("promocion"), cfg)

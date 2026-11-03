@@ -27,12 +27,25 @@ def _call_google(prompt: str, lcfg: dict) -> str:
     req = urllib.request.Request(
         f"https://generativelanguage.googleapis.com/v1beta/models/{lcfg['model']}:generateContent",
         data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": key})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        data = json.load(r)
+    import time
+    import urllib.error
+    for attempt in range(5):  # 429/503 son transitorios
+        try:
+            with urllib.request.urlopen(req, timeout=90) as r:
+                data = json.load(r)
+            break
+        except (urllib.error.HTTPError, urllib.error.URLError, ConnectionError) as e:
+            transient = not isinstance(e, urllib.error.HTTPError) or e.code in (429, 503)
+            if not transient or attempt == 4:
+                raise
+            time.sleep(3 * 2 ** attempt)
     return "".join(p.get("text", "") for p in data["candidates"][0]["content"]["parts"])
 
 
 PROVIDERS = {"anthropic": _call_anthropic, "google": _call_google}
+
+
+_LAST = [0.0]
 
 
 def extract_llm(transcript: str, schema: str, cfg: dict) -> dict:
@@ -41,7 +54,10 @@ def extract_llm(transcript: str, schema: str, cfg: dict) -> dict:
     load_dotenv()
     lcfg = cfg["llm"]
     prompt = "\n\n".join([lcfg["schemas"][schema], "TRANSCRIPCION:", transcript])
+    import time
+    time.sleep(max(0.0, _LAST[0] + lcfg.get("min_interval_s", 0) - time.time()))
     raw = PROVIDERS[lcfg["provider"]](prompt, lcfg)
+    _LAST[0] = time.time()
     m = re.search(r"\{.*\}", raw, re.S)
     if not m:
         raise ValueError(f"El LLM no devolvio JSON: {raw[:200]}")

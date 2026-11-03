@@ -97,9 +97,10 @@ order:
 
 llm:
   provider: google          # google | anthropic
-  model: gemini-2.5-flash   # ajuste al modelo disponible en su cuenta de AI Studio
+  model: gemini-3.5-flash-lite   # modelos con cuota gratuita propia; gemini-3.8-flash agoto su cupo diario
   max_tokens: 800
   temperature: 0
+  min_interval_s: 4     # separa llamadas para respetar el limite de peticiones
   system_prompt: |
     Eres un extractor de datos. Devuelve SOLO JSON valido, sin texto adicional.
     Para cada campo devuelve {"value": ..., "evidence": "<fragmento EXACTO copiado de la transcripcion>"}.
@@ -123,6 +124,8 @@ ladder:
   target_sr: 16000
 
 evaluation:
+  # Configuracion sobre la que se compara el extractor LLM (cuesta llamadas a la API)
+  primary: {model: small, compute_type: int8, device: cpu, glossary: false, level: L0}
   bootstrap_resamples: 2000
   bootstrap_seed: 7
   # Umbrales del regression gate (GitHub Actions evalua cache, nunca transcribe)

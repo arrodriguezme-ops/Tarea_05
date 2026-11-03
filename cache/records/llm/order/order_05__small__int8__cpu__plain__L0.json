@@ -1,0 +1,49 @@
+{
+ "fields": {
+  "items": [
+   {
+    "product": "pizzas",
+    "quantity": 3,
+    "unit_price": null
+   },
+   {
+    "product": "jaciosas",
+    "quantity": 3,
+    "unit_price": null
+   },
+   {
+    "product": "ensaladas",
+    "quantity": 2,
+    "unit_price": null
+   }
+  ],
+  "promocion": "combo familiar con 10 soles de descuento",
+  "direccion_entrega": "Los cedros 3.306. En la urbanización las palmeras.",
+  "metodo_pago": "yape",
+  "total_dicho": 47
+ },
+ "evidence": {
+  "items": [
+   "3 pizzas",
+   "3 jaciosas",
+   "2 ensaladas"
+  ],
+  "promocion": "combo familiar con 10 soles de descuento",
+  "direccion_entrega": "Los cedros 3.306. En la urbanización las palmeras.",
+  "metodo_pago": "en yapé",
+  "total_dicho": "47 soles"
+ },
+ "verified": {
+  "items": "verificado",
+  "promocion": "verificado",
+  "direccion_entrega": "verificado",
+  "metodo_pago": "verificado",
+  "total_dicho": "verificado"
+ },
+ "validation": {
+  "status": "no_validable",
+  "computed_total": null,
+  "said_total": 47,
+  "diagnosis": null
+ }
+}

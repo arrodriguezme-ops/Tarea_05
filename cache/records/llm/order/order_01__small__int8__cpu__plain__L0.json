@@ -1,0 +1,43 @@
+{
+ "fields": {
+  "items": [
+   {
+    "product": "hamburguesa",
+    "quantity": 3,
+    "unit_price": null
+   },
+   {
+    "product": "gaseosa",
+    "quantity": 2,
+    "unit_price": null
+   }
+  ],
+  "promocion": null,
+  "direccion_entrega": "los olivos 245",
+  "metodo_pago": "efectivo",
+  "total_dicho": 66
+ },
+ "evidence": {
+  "items": [
+   "tres hamburguesas",
+   "dos gaseosas"
+  ],
+  "promocion": null,
+  "direccion_entrega": "los olivos 245",
+  "metodo_pago": "El pago en efectivo ¿es correcto?",
+  "total_dicho": "Perfecto, 66, ¿cuánto demora más o menos?"
+ },
+ "verified": {
+  "items": "verificado",
+  "promocion": "ausente",
+  "direccion_entrega": "verificado",
+  "metodo_pago": "verificado",
+  "total_dicho": "verificado"
+ },
+ "validation": {
+  "status": "ok",
+  "computed_total": 66,
+  "said_total": 66,
+  "diagnosis": null
+ }
+}

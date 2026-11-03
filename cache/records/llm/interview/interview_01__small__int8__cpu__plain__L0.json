@@ -1,0 +1,36 @@
+{
+ "fields": {
+  "anios_experiencia": 4,
+  "ultimo_puesto": "lista de datos en una financiera",
+  "tecnologias": [
+   "Python",
+   "pandes",
+   "SQL",
+   "Power BI"
+  ],
+  "pretension_salarial": 6500,
+  "disponibilidad": "15_dias",
+  "nivel_ingles": "intermedio"
+ },
+ "evidence": {
+  "anios_experiencia": "Tengo cuatro años de experiencia, contando mis prácticas y empleos formales.",
+  "ultimo_puesto": "Mi último puesto fue en la lista de datos en una financiera de mediana",
+  "tecnologias": [
+   "Uso Python",
+   "la librería pandes",
+   "busco la base con SQL",
+   "Power BI"
+  ],
+  "pretension_salarial": "Me estoy pensando unos 6.500 solos al mes",
+  "disponibilidad": "podría empezar en dos semanas",
+  "nivel_ingles": "Diría que mi inglés es intermedio"
+ },
+ "verified": {
+  "anios_experiencia": "verificado",
+  "ultimo_puesto": "verificado",
+  "tecnologias": "verificado",
+  "pretension_salarial": "verificado",
+  "disponibilidad": "verificado",
+  "nivel_ingles": "verificado"
+ }
+}

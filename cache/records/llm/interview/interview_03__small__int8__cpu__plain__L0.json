@@ -1,0 +1,34 @@
+{
+ "fields": {
+  "anios_experiencia": 1,
+  "ultimo_puesto": "practicante de sistemas",
+  "tecnologias": [
+   "excel",
+   "power bien",
+   "secuel"
+  ],
+  "pretension_salarial": 2800,
+  "disponibilidad": "30_dias",
+  "nivel_ingles": "basico"
+ },
+ "evidence": {
+  "anios_experiencia": "cuánto borró la experiencia fue un año",
+  "ultimo_puesto": "trabajé como practicante de sistemas en una clínica",
+  "tecnologias": [
+   "excel control de dinámicas y macros",
+   "gráficos en power bien",
+   "consultas de secuel"
+  ],
+  "pretension_salarial": "mi pretensión sería 2800 soles al mes",
+  "disponibilidad": "necesitaría un mes para empezar",
+  "nivel_ingles": "en inglés es básico"
+ },
+ "verified": {
+  "anios_experiencia": "verificado",
+  "ultimo_puesto": "verificado",
+  "tecnologias": "verificado",
+  "pretension_salarial": "verificado",
+  "disponibilidad": "verificado",
+  "nivel_ingles": "verificado"
+ }
+}

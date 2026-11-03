@@ -75,6 +75,16 @@ python -c "import sys, src.engine; assert not {'streamlit','gradio'} & set(sys.m
 - **Glosario** (`hotwords`, diferencia pareada con/sin): ΔWER -0.016 (IC95 [-0.041, +0.005], incluye 0); Δexactitud del registro +0.10 (IC95 [+0.03, +0.17]; el bootstrap con n=5 es optimista).
 - **WER no predice el registro:** `interview_04` tiene WER 0,15 (de los más bajos) y el sueldo sale mal (300000 en vez de 12000) por una trampa del guion; en la muestra actual no hay ningún clip con registro perfecto, así que falta el caso «WER alto + registro perfecto».
 
+### Reglas vs LLM (`small`, `int8`, texto plano, L0; LLM = `gemini-3.5-flash-lite` de Google AI Studio)
+| | Tarea 1 (exactitud media) | Tarea 2 (exactitud media) | Trampas de total atrapadas |
+|---|---|---|---|
+| Reglas | 0,73 | 0,48 | 2/3 |
+| LLM | 0,83 | 0,48 | 1/3 |
+
+- El LLM corrige casos que las reglas no ven (`interview_02`: 0,50 → 0,83; `interview_04`: 0,83 → 1,00, con WER 0,15) pero no es mejor en pedidos: en `order_02/04/05` devuelve ítems sin cantidad o precio y el pedido queda `no_validable`. Con 5 clips por tarea la diferencia no es concluyente.
+- Ambos pasan por la misma verificación literal. El LLM debe citar la evidencia; si no existe en la transcripción, el campo queda `sin_verificar`.
+- Solo se evaluó el LLM sobre la configuración principal (`evaluation.primary` en `config.yaml`) para limitar llamadas a la API (el plan gratuito limita peticiones por día y por modelo).
+
 ### Tarea 2 — Pedidos
 | modelo | precisión | dispositivo | glosario | nivel | WER [IC95] | CER | s/min audio | exactitud registro |
 |---|---|---|---|---|---|---|---|---|

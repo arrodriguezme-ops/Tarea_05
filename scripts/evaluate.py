@@ -43,14 +43,21 @@ def get_result(path: Path, tr: dict, schema: str, extractor: str, cfg: dict) -> 
 
 
 def evaluate(cfg, extractor):
+    prim = cfg["evaluation"]["primary"] if extractor == "llm" else None
     gold, rows = load_gold(cfg), []
     for schema in ("interview", "order"):
         for f in sorted((Path(cfg["paths"]["cache_transcripts"]) / schema).glob("*.json")):
             tr = json.loads(f.read_text(encoding="utf-8"))
+            if prim and any(tr.get(k, "L0" if k == "level" else None) != v for k, v in prim.items()):
+                continue
             g = gold[schema].get(tr["clip"])
             if not g:
                 continue
-            res = get_result(f, tr, schema, extractor, cfg)
+            try:
+                res = get_result(f, tr, schema, extractor, cfg)
+            except Exception as e:  # llamadas a API fallidas: se omite la fila; reintente (hay cache)
+                print(f"OMITIDO {f.name}: {type(e).__name__}: {str(e)[:120]}")
+                continue
             w, c = metrics.wer_cer(g["reference"], tr["text"])
             sc = metrics.score_record(res["fields"], res["verified"], g["record"], cfg[schema]["fields"])
             rows.append({"task": schema, "clip": tr["clip"], "model": tr["model"], "compute_type": tr["compute_type"],
