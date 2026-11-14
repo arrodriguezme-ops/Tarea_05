@@ -1,0 +1,16 @@
+{
+ "text": "Hola, ¿qué gusto conocerte? ¿cuéntame? ¿en qué se está trabajando últimamente? Hola, ¿el gusto es mío? Me desempeñé como científico de datos, en StarDap, comerse electrónicos, donde analizaba comportamiento de comprar los usuarios y armadamos o de recomendación para la página principal. ¿Cuántos años llevas en esto? 5 años de experiencia total y los últimos dos eran en StarDap, que fue donde más aprendí porque éramos un equipo pequeño. Y todo lo, y todos hacíamos de todo. ¿Qué bien? ¿Qué herramientas utilizadas? Todo lo en Python, compándas para manipular los bases de datos, para mostrar resultados de marketing armada pequeñas aplicaciones con Streamlit, y mantener el código ordenado con Git para no pisarnos entre compañeros. Muy útil. Ahora, ¿cuál es tu pretención salarial? En pretención salarial es ese 7.800 soldes al mes. Lo que aculece según lo que paga en mercado para mi nivel, pero es que hay margen de conversación. Entendido, y el inglés como lo manejas, mi inglés es intermedio, me defiendo bien leguen artículos y bien curiosos en línea. Pero me pongo nervioso a ver en reuniones. Es algo en lo que estoy trabajando. Es normal. Para cuando podrías estar disponible, el StarDap se roba el mes pasado, así que estoy libre. Podría empezar de inmediato, apenas me digan. Antes de terminar, ¿qué te motivo en este puesto particular? Que combinan análisis con comunicación de datos. Me gusta cuando lo que hago se usa de verdad para tomar decisiones y no queda como un informe que nadie lee. También me trae que el equipo parezca abierto a probar cosas nuevas. ¿Cómo manejas los procesos gustados? Divido el trabajo en partes pequeñas y revisos si algo se complica y priorizo lo que más impacto tiene. Prefiero entregar algo sencillo y bien hecho, que algo ambicioso a medias. Perfecto. Con eso terminamos. Te comunicaremos el resultado en los próximos días. Muchas gracias que le vaya bien.",
+ "model": "base",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 13.273278499953449,
+ "audio_s": 111.1466875,
+ "sec_per_audio_min": 7.165276158114986,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "interview_05",
+ "task": "interview",
+ "level": "L0"
+}

@@ -1,0 +1,16 @@
+{
+ "text": "¿Pixería? ¿Y porque sería la granó? ¿Cuáles noches? ¿Qué es ese orenar? ¿Cuáles noches quisiera una pixera de dos papas fritas de tres vacíos? No, perdón, mejor dos pixas. Aunque somos seis en la reunión. ¿De acuerdo? Dos pixas y dos papas y tres vacíos. ¿En qué pedido califica el como familiar? ¿Qué tiene diez soles de descuento? Lo aplicamos. Sí, claro, aplíquelo. Hay que ser algo más. Consulta las papas y en cuando salzas. Sí, incluyen salzas de la casa. Perfecto, muchas gracias a los chicos, les encanta. No, y el de registraré cuál es la dirección de entrega. Calle de las begonñas, 178. El segundo piso, el edificio gris. Hay un taller mecánico en la planta baja. El recuerdo que el repartidor no os puedo subir los piso saltos, sino por terro, por una cuestión de seguridad. ¿Alguien podría bajar a recibir? Sí, no hay problema, mi hermana de bajará. Perfecto, lo montamos junto de dirección, sí, perfecto. ¿Cómo pago? Bueno, pago con tarjeta. Todo bien, gracias. Es que tenemos invitados y no queremos que falten nada. Entendido, lo preparamos todos. Sí, el repartidor lleva POS, déjame hacer el cálculo, el total es 116 soles. Está bien, gracias. ¿Cuándo tarda? Como 40 minutos. OK, muchas gracias.",
+ "model": "base",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 9.364903500303626,
+ "audio_s": 83.84,
+ "sec_per_audio_min": 6.701982466820343,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_02",
+ "task": "order",
+ "level": "L0"
+}

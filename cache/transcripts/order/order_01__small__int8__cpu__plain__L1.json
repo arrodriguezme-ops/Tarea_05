@@ -1,0 +1,16 @@
+{
+ "text": "Okay, hamburguesa sería el sabor, buenas tardes, ¿en qué puedo ayudarte? Buenas tardes, quisiera un pedido del librí, por favor. Claro que sí, dígame qué es el ordenar. Quiero dos hamburguesas, una gaseosa, ah, espera, mejor tres hamburguesas, sí. Y que viene mi primo en la casa, y las gaseosas que sean dos, eh, en vez de una. Perfecto, entonces, tres hamburguesas y dos gaseosas, ¿no? ¿Desagregar algo más? No, gracias, sí está bien. ¿Tienes alguna duda sobre el pedido del librí? Una consulta, ¿tienen alguna promoción de hoy? Mi primo, eh, siempre me pide que pregunte. Hoy no tenemos promociones, lamentablemente, pero el del librí, a su zona, no tiene costo adicional. Ah, qué bien. ¿A qué erección enviamos el pedido? Ah, avenida a los olivos, dos cuarenta y cinco. ¿Ha notado? ¿Cómo va a pagar? Bueno, comietaria digital. Okay, le confirmo el pedido, tres hamburguesas y dos gaseosas para entregar en la avenida a los olivos. El pago en efectivo, ¿es correcto? Sí, correcto. Eh, no sé, ojalá llegue caliente, ya tenemos hambre todos. No se preocupe, empacamos todas las hamburguesas técnicas para que llegue en un buen estado. Perfecto, eh, sesenta y seis, ¿cuánto demora más o menos? Unos treinta minutos, eh, gracias por su pedido. Que lo disfrute, gracias a ustedes.",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 96.78594849957153,
+ "audio_s": 73.856,
+ "sec_per_audio_min": 78.62809940931398,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_01",
+ "task": "order",
+ "level": "L1"
+}

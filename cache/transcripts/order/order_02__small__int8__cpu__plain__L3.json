@@ -1,0 +1,18 @@
+{
+ "text": "pizzería y embrofizaría la granol buenas noches, que desea rengar buenas noches, quisiera una pizza, dos papas fritas, tres gaseosas no, perdón, mejor dos pizzas aunque somos seis en la reunión de acuerdo, dos pizzas y dos papas y tres gaseosas ¿en qué pedido califica el modo familiar? ¿tienen diez soles de desconto? ¿lo aplicamos? sí, claro, aplíquelo hay que hacer algo más consulta las papas ¿vinen con salsas? sí, incluyen salsas del de casa perfecto, muchas gracias a los chicos les encanto no, ya he registrado ¿cuál es la dirección de entrega? que haya las begonias 178 el segundo piso, edificio gris hay un taller mecánico en la planta de abajo le recuerdo que tras partido no puedo subir los pisos altos sino hay portero por una costuna de seguridad ¿alguien podría bajar a recibir? sí, no hay problema, mi hermana lo bajará perfecto, lo tomo junto de dirección sí, perfecto, ¿cómo pago? bueno, pago con tarjeta todo bien, gracias es que tenemos invitados y no queremos que falte nada entendido, los preparamos todos si el repartidor lleva POS, déjenme hacer el cálculo, total es 166 soles está bien, gracias cuando tarda, como 40 minutos ok, muchas gracias",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 22.50643360009417,
+ "audio_s": 83.84,
+ "sec_per_audio_min": 16.106703435181895,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_02",
+ "task": "order",
+ "level": "L3",
+ "snr_db_measured": 10.000000000329178,
+ "snr_db_target": 10
+}

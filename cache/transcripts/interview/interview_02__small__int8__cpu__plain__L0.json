@@ -1,0 +1,16 @@
+{
+ "text": "Hola, buenos tardes. Antes de que nada, ¿cuándo estarás disponible si te desecronamos? Buenos tardes, estoy libre desde la semana pasada, así que puedo empezar inmediato, sin ningún problema. Genial, háblame tu formación y tu trayectoria. Bueno, hace 10 años que empecé a estudiar sistemas y hace unos ciclos ya estaba haciendo páginas web para amigos. Después de graduar, me entré a trabajar en una empresa de logística. En total, tengo 7 años de experiencia profesional, casi todo en desarrollo de software. ¿Y cuál fue tu último puesto? Trabajé con un desarrollador backend en una empresa de transporte durante casi tres años en el último puesto. Me encargaba de interfaces de programación que usaban las aplicaciones móviles de los conductores. ¿Con qué tecnologías? Principalmente Python, todo lo desplegábamos con Docker, llevábamos el control de versiones con GT y los servicios que corrían en AWS. También he contado otras cosas, he tocado otras cosas, pero estas son las con las que ya me siento más seguro. Vengo que he trabajado con equipos de otros países, ¿cómo peorías tu nivel de inglés? Tengo un nivel avanzado de inglés, viví en un tiempo en Canadá y las reuniones diarias con el equipo de allá eran en inglés, escribo documentación y hasta he dado presentaciones sin mayor problema. Muy bien, hablamos del dinero. ¿Qué pretensión salyer tienes? Pretensión es 2500 dólares mensuales, entiendo que depende del presupuesto de la empresa, pero es el rango en el que me estoy moviendo con otras ofertas. ¿Qué es lo que más valora de un equipo de trabajo? Bueno, la comunicación clara, prefiero un equipo donde se pregunte cuándo hay dudas, que se revisen el trabajo de los demás y molestar si reconozcan los errores rápido. He visto cuándo eso falla, los proyectos se retrasan más de lo necesario. ¿Algo que quieras preguntarnos sobre el puesto? Sí, me gustaría saber cómo se procesó la revisión de código y si hay espacio para capacitaciones durante el año. Gracias por la franqueza, revisaremos tu perfil y con el equipo técnico, te daremos una respuesta inmediata. Perfecto, muchas gracias, que tengan un buen día.",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 37.846209899988025,
+ "audio_s": 131.3066875,
+ "sec_per_audio_min": 17.293655313628115,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "interview_02",
+ "task": "interview",
+ "level": "L0"
+}

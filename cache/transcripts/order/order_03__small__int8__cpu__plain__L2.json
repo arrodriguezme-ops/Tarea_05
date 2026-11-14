@@ -1,0 +1,16 @@
+{
+ "text": "Hola, ¿qué tal? Buenas tardes, hamburgueserías, San Mateo. Buenas tardes, ¿para qué es el pedido? Buenas tardes, el pedido es para almorzar en una oficina, quiero una hamburguesa y ensalada y una porción de papas. Está bien, lo confirmo. Sí, por favor, y el heredero es aparte, muchas gracias. ¿Prefiere una hamburguesa con todas las cremas o algún especial? Con mayonesa, ketchup y nada más, la verdad. Perfecto, punto medio entonces. ¿Quiere que le agregamos alguna bebida? No, no, gracias. ¿Ha notado cuál es su dirección? Jirón Guaya, 456. En el centro, preguntas por la recepción de Marcela. Perfecto, Jirón Guaya. ¿Cómo será el pago? En ya, pero básicamente. Una pregunta, necesitas cubiertos, descartables o servilletas y por favor, más que todos servilletas. Sí, perfecto. Las incluimos, las repito el pedido, una hamburguesa y una ensalada con heredero aparte y unas papas. ¿Está bien? Sí. Claro, el total sería en 47 soles. Entendido, el agua y el vagon ya peor ahora mismo. ¿Está listo en media hora? Sí, en 25 minutos la llega. Gracias por su preferencia.",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 22.75153570016846,
+ "audio_s": 69.44,
+ "sec_per_audio_min": 19.65858499438519,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_03",
+ "task": "order",
+ "level": "L2"
+}

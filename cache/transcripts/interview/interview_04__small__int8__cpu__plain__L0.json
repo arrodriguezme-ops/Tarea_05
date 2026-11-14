@@ -1,0 +1,16 @@
+{
+ "text": "Buenos días, he leído tu currículum, pero me gustaría escucharlo de ti. ¿Cuál ha sido tu recorrido? Buenos días, llevo 10 años de experiencia analítica avanzada, la mayor parte en bancada, una empresa de telecomunicaciones, empecé como analista y fui subiendo hasta el día de ahora equipos. Y tu posición más reciente, mi último puesto fue gerente de analítica en una empresa de telecomunicaciones donde coordinaba a 8 personas, manejábamos un presupuesto de 300 mil soles al año para proyectos de ciencia de datos y la mayor parte se iba en infraestructura. Interesante, ¿qué tecnologías vas a usar a tu equipo? Entrenábamos las redes neuronales con TensorFlow, la mayoría del código en Python, todo en la nube de AWS y para los análisis exploratorios usábamos SQL sobre un almacén de datos enorme. Perfecto, ¿y cómo el cargo implica reportar a la matriz? ¿Cómo anda con el inglés? Tengo un nivel avanzado, tengo certificación y la mayoría de mis reuniones en los últimos años serán proveedores de Estados Unidos y Europa. Hablemos de la compensación, ¿cuánto esperáis ganar? Considero mi experiencia del tamaño del equipo que tendría el cargo, mi pretensión es de 12 mil soles mensuales, estoy abierto a una parte variable por objetivos y si la empresa maneje ese esquema. Tomamos nota, ¿qué tan pronto podrías empezar? Bueno, una cultura, confianza. Tengo un contacto vigente con Cláusula de Salida, así que necesito tres meses para dejar todo en orden y entregar bien a mi reemplazo. Para terminar, ¿qué tipo de cultura de trabajo prefieres? Una cultura de confianza, con objetivos claros pero sin incomodar cada mundo de la persona. En mis últimos, en mis equipos siempre intenté serla que pudiera enfocarse y aprender y proponer mejoras, y creo que los resultados eran mejores así. También valoro mucho la formación continua. ¿Coincidimos bastante en eso? ¿Tienes alguna pregunta para nosotros? Quisiera conocer cómo está compuesto el equipo actual y cuáles son los principales retos para este año. Es comprensible, gracias por tu tiempo, nos pondremos en contacto contigo. Gracias a ustedes. Buen día.",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 38.73370710015297,
+ "audio_s": 135.4453125,
+ "sec_per_audio_min": 17.158382103545875,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "interview_04",
+ "task": "interview",
+ "level": "L0"
+}

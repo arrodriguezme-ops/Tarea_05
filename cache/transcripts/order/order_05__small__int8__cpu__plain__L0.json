@@ -1,0 +1,16 @@
+{
+ "text": "¿Pixaría y hamburguesaría el sabor? Buenas tardes, ¿qué se le ofrece? Buenas tardes, es para el cumpleaños de mi hija, así que quiero 3 pizzas, 3 jaciosas y 2 ensaladas. Qué lindo, 3 pizzas, 3 jaciosas y 2 ensaladas. Con eso califica para el combo familiar con 10 soles de descuento. ¿Se lo aplico? Sí, por favor. Una consulta. ¿Pueden escribir un mensaje en la caja con salsa? Quiero que diga feliz cumpleaños. Sí, con un solo escribimos. Es una fiesta grande. Sí, vienen todos los compañeros de colegio y sus abuelos, así que seguro vamos a pedir de nuevo la próxima semana. De hecho, ¿a qué dirección enviamos? Los cedros 3.306. En la urbanización las palmeras. Hay un logo grande en la puerta, no tiene pierda. Le confirmó el pedido a 3 pizzas, 3 jaciosas y 2 ensaladas con el combo familiar. ¿Está bien así? Sí. A una cosa, ¿podrían incluir una bela parte? Es una gran sorpresa. Claro que sí, con gusto. Se lo enviamos en una bolsita para que lo coloquen ustedes. Qué amable, muchas gracias. ¿Cómo se va a pagar? Ah, en yapé. Claro que sí. Esas las cuentas en total es 47 soles. Perfecto. Antes de las 5, por favor, llévelas. Muchas gracias. Ok, confirmado. Gracias.",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 22.92429680004716,
+ "audio_s": 72.192,
+ "sec_per_audio_min": 19.052773271315793,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_05",
+ "task": "order",
+ "level": "L0"
+}

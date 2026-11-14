@@ -1,0 +1,47 @@
+{
+ "fields": {
+  "items": [
+   {
+    "product": "hamburguesa",
+    "quantity": 1,
+    "unit_price": null
+   },
+   {
+    "product": "ensalada",
+    "quantity": 1,
+    "unit_price": null
+   },
+   {
+    "product": "papas",
+    "quantity": 1,
+    "unit_price": null
+   }
+  ],
+  "promocion": null,
+  "direccion_entrega": "Jirón Guaya, 456. En el centro. Preguntas por la recepción de Marcela.",
+  "metodo_pago": "yape",
+  "total_dicho": 47
+ },
+ "evidence": {
+  "items": [
+   "una hamburguesa y ensalada y una porción de papas"
+  ],
+  "promocion": null,
+  "direccion_entrega": "Jirón Guaya, 456. En el centro. Preguntas por la recepción de Marcela.",
+  "metodo_pago": "En Yape, básicamente.",
+  "total_dicho": "47 soles"
+ },
+ "verified": {
+  "items": "verificado",
+  "promocion": "ausente",
+  "direccion_entrega": "verificado",
+  "metodo_pago": "verificado",
+  "total_dicho": "verificado"
+ },
+ "validation": {
+  "status": "descuadre",
+  "computed_total": 41,
+  "said_total": 47,
+  "diagnosis": "error_hablante"
+ }
+}

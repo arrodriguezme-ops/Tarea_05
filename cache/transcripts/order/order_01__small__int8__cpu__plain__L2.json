@@ -1,0 +1,16 @@
+{
+ "text": "Ok, hamburguesa, hamburguesaría el sabor, unas tardes en que pueda ayudarte, unas tardes quisieron un pedido del yuri por favor, claro que si, dígame que se ordenara, quiero dos hamburguesas, una gaseosa, ah espera mejor tres hamburguesas si, y que viene a mi primo en la casa y las gaseosas que sean dos en vez de una, perfecto entonces tres hamburguesas y dos gaseosas ¿no? ¿desagregar algo más? No gracias, si está bien, tienen alguna duda sobre el pedido del diberi, una consulta, tienen alguna promoción de hoy, mi primo siempre me pide que pregunte, hoy no tenemos promociónes lamentablemente, pero el del diberi a su zona no tiene costa adicional, ah que bien, a qué erección enviamos el pedido, ah venía los olivos 245, ha notado, como va a pagar, bueno comietaria digital, ok, le confirmo el pedido, tres hamburguesas y dos gaseosas para entregar en, le venía los olivos, el pago en efectivo, es correcto, si, correcto, no se, ojalá llegue caliente ya tenemos hambre todos, no se preocupe, empacamos todas las bolsas técnicas para que llegue en un buen estado, perfecto, 66, cuento demora más o menos, unos 30 minutos, gracias por su pedido, que lo disfrute, gracias a ustedes.",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 23.956865900196135,
+ "audio_s": 73.856,
+ "sec_per_audio_min": 19.46235856276766,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_01",
+ "task": "order",
+ "level": "L2"
+}

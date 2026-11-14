@@ -1,0 +1,147 @@
+[
+ {
+  "clip": "order_01",
+  "reference_transcript": "Hamburguesería El Sabor, buenas tardes, ¿en qué puedo ayudarle? Buenas tardes. Quisiera hacer un pedido para delivery, por favor. Claro que sí, dígame qué desea ordenar. Quiero dos hamburguesas y una gaseosa. Ah, espera, mejor tres hamburguesas, que viene mi primo a la casa. Y las gaseosas, que sean dos en vez de una. Perfecto. Entonces tres hamburguesas y dos gaseosas. ¿Desea agregar algo más? No, así está bien, gracias. Con eso alcanza. ¿Tiene alguna duda sobre el pedido o el delivery? Una consulta: ¿tienen alguna promoción hoy? Mi primo siempre me pide que pregunte. Hoy no tenemos promociones, lamentablemente. Pero el delivery a su zona no tiene costo adicional. Ah, qué bien, eso ayuda bastante. Entonces seguimos con el pedido tal como está. ¿A qué dirección enviamos el pedido? A la avenida Los Olivos 245. Es una casa de dos pisos con portón verde, toque el timbre porque el perro ladra pero no muerde. Anotado. ¿Cómo va a pagar, en efectivo o con tarjeta? En efectivo. Tengo billetes de cien, ¿tendrá vuelto el repartidor? Le confirmo el pedido: tres hamburguesas y dos gaseosas, para entregar en la avenida Los Olivos, y pago en efectivo. ¿Es correcto? Sí, correcto. Ojalá llegue caliente, que ya tenemos hambre todos. No se preocupe, empacamos todo en bolsas térmicas para que llegue en buen estado. Sí, no se preocupe, el repartidor lleva sencillo. Entonces, el total es sesenta y seis soles. Perfecto, sesenta y seis. ¿Cuánto demora más o menos? Unos treinta minutos. Gracias por su pedido, que lo disfrute. Gracias a ustedes, hasta luego.",
+  "traps": {
+   "autocorreccion": true,
+   "total_incorrecto": false,
+   "digitos": true
+  },
+  "record": {
+   "items": [
+    {
+     "product": "hamburguesa",
+     "quantity": 3,
+     "unit_price": 18
+    },
+    {
+     "product": "gaseosa",
+     "quantity": 2,
+     "unit_price": 6
+    }
+   ],
+   "promocion": null,
+   "direccion_entrega": "avenida los olivos 245",
+   "metodo_pago": "efectivo",
+   "total_dicho": 66
+  }
+ },
+ {
+  "clip": "order_02",
+  "reference_transcript": "Pizzería y hamburguesería El Sabor, buenas noches. ¿Qué desea ordenar? Buenas noches. Quisiera una pizza, dos papas fritas y tres gaseosas. No, perdón, mejor dos pizzas, porque somos seis en la reunión. De acuerdo, dos pizzas, dos papas y tres gaseosas. Ese pedido califica para el combo familiar, que tiene diez soles de descuento. ¿Lo aplicamos? Sí, claro, aplíquelo, el combo familiar. ¿Hay que hacer algo más? Consulta: ¿las papas vienen con salsas? Sí, incluyen salsas de la casa, tártara y ají, sin costo adicional. Perfecto, muchas gracias, a los chicos les encantan. No, ya lo registré. ¿Cuál es la dirección de entrega? Calle Las Begonias 1780, en el segundo piso. Es un edificio gris, hay un taller mecánico en la planta baja. Le recuerdo que el repartidor no puede subir a pisos altos si no hay portero, por una cuestión de seguridad. ¿Alguien podría bajar a recibir? Sí, no hay problema, mi hermana bajará a la puerta cuando él llame por teléfono. Le dejo mi celular para eso. Perfecto, lo anotamos junto con la dirección. Perfecto. ¿Y el método de pago? Voy a pagar con tarjeta. ¿Pasan con el aparato? Confirmo entonces: dos pizzas, dos papas y tres gaseosas, con el combo familiar, para la calle Las Begonias, y pago con tarjeta. ¿Todo bien? Todo bien, gracias. Es que tenemos invitados y no queremos que falte nada. Entendido, le preparamos todo con mucho cuidado. Sí, el repartidor lleva el POS. Déjeme hacer el cálculo. El total es ciento seis soles. Está bien, gracias. ¿Cuánto tarda? Aproximadamente cuarenta minutos, porque hoy hay bastante pedido. Gracias por llamar. A usted, buenas noches.",
+  "traps": {
+   "autocorreccion": true,
+   "total_incorrecto": true,
+   "digitos": true
+  },
+  "record": {
+   "items": [
+    {
+     "product": "pizza",
+     "quantity": 2,
+     "unit_price": 35
+    },
+    {
+     "product": "papas",
+     "quantity": 2,
+     "unit_price": 9
+    },
+    {
+     "product": "gaseosa",
+     "quantity": 3,
+     "unit_price": 6
+    }
+   ],
+   "promocion": "combo_familiar",
+   "direccion_entrega": "calle las begonias 1780",
+   "metodo_pago": "tarjeta",
+   "total_dicho": 106
+  }
+ },
+ {
+  "clip": "order_03",
+  "reference_transcript": "Buenas tardes, El Sabor, le habla Mateo. ¿Cuál es su pedido? Hola, buenas tardes. Es para almorzar hoy en la oficina. Quiero una hamburguesa, una ensalada y una porción de papas. Muy bien. Una hamburguesa, una ensalada y unas papas. ¿La ensalada la desea con aderezo aparte? Sí, por favor, el aderezo aparte. Gracias. ¿Prefiere la hamburguesa con todas las cremas o alguna en especial? Con mayonesa y ketchup nada más, sin picante, que no me cae bien a esta hora. Y que no la pasen mucho por la plancha, por favor. Perfecto, punto medio entonces. ¿Quiere que le agreguemos alguna bebida para acompañar? No, gracias, tengo agua en la oficina. Con eso estoy bien, hoy no quiero gastar de más. Anotado. ¿Cuál es la dirección? Jirón Huallaga 456, oficina cuatro, en el centro. Pregunte en recepción por Marcela. Perfecto, jirón Huallaga 456. ¿Cómo va a pagar? Con Yape, le envío la captura apenas me confirme el monto. Una pregunta, ¿necesita cubiertos descartables o servilletas? Sí, por favor, unas servilletas nada más, los cubiertos los tenemos aquí. Perfecto, las incluimos. Le repito el pedido: una hamburguesa, una ensalada con aderezo aparte y unas papas. ¿Está bien? Sí, está bien, gracias. Claro. El total es cuarenta y siete soles. Entendido. Le hago el Yape ahora mismo. ¿Está listo en media hora? Sí, en unos veinticinco minutos le llega. Gracias por su preferencia. Gracias, hasta luego.",
+  "traps": {
+   "autocorreccion": false,
+   "total_incorrecto": true,
+   "digitos": true
+  },
+  "record": {
+   "items": [
+    {
+     "product": "hamburguesa",
+     "quantity": 1,
+     "unit_price": 18
+    },
+    {
+     "product": "ensalada",
+     "quantity": 1,
+     "unit_price": 14
+    },
+    {
+     "product": "papas",
+     "quantity": 1,
+     "unit_price": 9
+    }
+   ],
+   "promocion": null,
+   "direccion_entrega": "jirón huallaga 456",
+   "metodo_pago": "yape",
+   "total_dicho": 47
+  }
+ },
+ {
+  "clip": "order_04",
+  "reference_transcript": "Buenas noches, El Sabor, ¿en qué le ayudo? Buenas noches. Quiero dos pizzas y una ensalada, por favor. Claro. Dos pizzas y una ensalada. ¿Algo más? Mmm, no, mejor quita la ensalada, que ya no la voy a necesitar. Solo las dos pizzas. Listo, solo dos pizzas. Le comento que hoy tenemos un descuento de diez por ciento en pedidos de pizza. Ah, qué bien, me lo aplica, entonces. Pregunta: ¿las pizzas vienen con el borde relleno o eso se cobra aparte? El borde relleno de queso es opcional, pero hoy se lo regalamos por ser cliente frecuente. Qué amable, entonces sí, con borde relleno, por favor. Mi familia lo adora. Por supuesto. ¿Dirección de entrega? Avenida Arequipa 1204, cerca del parque, la puerta es azul. Anotado. ¿Va a pagar en efectivo, con tarjeta o con Yape? En efectivo, tengo justo billetes de cincuenta. Le repito el pedido para confirmar: dos pizzas, con el descuento aplicado. ¿Correcto? Correcto. Y por favor, que las corten en ocho pedazos, que mis sobrinos son muy exigentes. Descuide, vienen cortadas de la forma tradicional, en ocho porciones cada una. Perfecto, entonces. Perfecto. Entonces el total es setenta y tres soles. Está bien, gracias. ¿Cuánto tiempo? Cerca de treinta y cinco minutos. Que tenga buena noche. Igualmente, adiós.",
+  "traps": {
+   "autocorreccion": true,
+   "total_incorrecto": true,
+   "digitos": true
+  },
+  "record": {
+   "items": [
+    {
+     "product": "pizza",
+     "quantity": 2,
+     "unit_price": 35
+    }
+   ],
+   "promocion": "descuento_10",
+   "direccion_entrega": "avenida arequipa 1204",
+   "metodo_pago": "efectivo",
+   "total_dicho": 73
+  }
+ },
+ {
+  "clip": "order_05",
+  "reference_transcript": "Pizzería y hamburguesería El Sabor, buenas tardes. ¿Qué se le ofrece? Buenas tardes. Es para el cumpleaños de mi hija, así que quiero tres pizzas, tres gaseosas y dos ensaladas. Qué lindo. Tres pizzas, tres gaseosas y dos ensaladas. Con eso califica para el combo familiar, con diez soles de descuento. ¿Se lo aplico? Sí, por favor, aplíquelo. Gracias. Consulta: ¿pueden escribir un mensaje en la caja con salsa? Quiero que diga feliz cumpleaños. Con gusto, se lo escribimos. ¿Es una fiesta grande? Sí, vienen todos sus compañeros del colegio y los abuelos, así que seguro vamos a pedir de nuevo la próxima semana. Hecho. ¿A qué dirección enviamos? Calle Los Cedros 3306, en la urbanización Las Palmeras. Hay un globo grande en la puerta, no tiene pierde. Le confirmo el pedido: tres pizzas, tres gaseosas y dos ensaladas, con el combo familiar. ¿Está bien así? Está perfecto. Ah, una cosa, ¿podrían incluir una vela aparte? Es una sorpresa. Claro que sí, con gusto. Se la enviamos en una bolsita para que la coloquen ustedes. Qué amable, muchas gracias. Perfecto. ¿Cómo desea pagar? Con Yape, si me permite. Le mando el comprobante apenas me diga cuánto es. Claro que sí. Hechas las cuentas, el total es ciento cuarenta y uno soles. Perfecto, ciento cuarenta y uno. Lo envío en un momento. ¿A qué hora llegaría? Antes de las cinco, calculo. Muchas felicidades a su hija. Muchas gracias, hasta luego.",
+  "traps": {
+   "autocorreccion": false,
+   "total_incorrecto": false,
+   "digitos": true
+  },
+  "record": {
+   "items": [
+    {
+     "product": "pizza",
+     "quantity": 3,
+     "unit_price": 35
+    },
+    {
+     "product": "gaseosa",
+     "quantity": 3,
+     "unit_price": 6
+    },
+    {
+     "product": "ensalada",
+     "quantity": 2,
+     "unit_price": 14
+    }
+   ],
+   "promocion": "combo_familiar",
+   "direccion_entrega": "calle los cedros 3306",
+   "metodo_pago": "yape",
+   "total_dicho": 141
+  }
+ }
+]

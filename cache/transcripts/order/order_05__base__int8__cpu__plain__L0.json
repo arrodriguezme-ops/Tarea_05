@@ -1,0 +1,16 @@
+{
+ "text": "¿Pixaría y aburusaría el sabor o unas tardes? ¿Qué se lo ofrece? Buenas tardes, es para el cumpleaños de mi hija, así que quiero tres pixas, tres gaseos, así dos en saladas. Que lindo, tres pixas, tres gaseos, así dos en saladas. Con eso cualifica para el cumpleo familiar, con 10 soles de descuento. Soy lo plico, sí, por favor. Una consulta, pueden escribir un mensaje en la caja con salsa, quiero que digas feliz cumpleaños. Sí, con un soles, si lo escribimos, es una fiesta grande, si vienen todos esos compañeros y colegios y los abuelos, así que seguro vamos a pedir de nuevo la próxima semana. De hecho, ¿a qué dirección enviamos a los cedros 3.3006 en la urbanización de las palmeras? Hay un logo grande en la puerta, no tiene pierda, le confirmé el pedido, tres pixas, tres gaseos, así dos en saladas, con el cumpleo familiar, ¿está bien así? Sí, a una cosa, pueden incluir una bela parte, es una gran sorpresa. Claro que sí, con gustos, se enviamos con una bolsita para que lo coloquen ustedes. Qué amable, muchas gracias, ¿cómo se va a pagar? Ah, en Japé, claro que sí, estos es las cuentos en total, es 40 y si les soles. Perfecto. Antes de las cinco, por favor, lleveles, lleveles, muchas gracias. Ok, confirmado, gracias.",
+ "model": "base",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 8.22052549989894,
+ "audio_s": 72.192,
+ "sec_per_audio_min": 6.832218666804306,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_05",
+ "task": "order",
+ "level": "L0"
+}

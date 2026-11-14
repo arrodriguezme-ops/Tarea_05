@@ -1,0 +1,917 @@
+{
+ "rows": [
+  {
+   "task": "interview",
+   "clip": "interview_01",
+   "model": "small",
+   "compute_type": "int8",
+   "device": "cpu",
+   "glossary": false,
+   "level": "L0",
+   "wer": 0.17866004962779156,
+   "cer": 0.10059676044330776,
+   "sec_per_audio_min": 17.498815653788693,
+   "vram_peak_mb": null,
+   "snr_db_measured": null,
+   "text": "Buenos días, gracias por venir. Para empezar, cuéntame un poco de ti y qué es lo que has hecho hasta ahora. Buenos días, gracias a ustedes. Soy ingeniero estadístico, siempre me ha gustado trabajar con números. Mi último puesto fue en la lista de datos en una financiera de mediana, así que estuve hasta el mes pasado, bueno cuando terminó mi contrato. ¿Cuánto tiempo de experiencia tienes en total trabajando con datos? Tengo cuatro años de experiencia, contando mis prácticas y empleos formales. A principios hacía reportes sencillos y poco a poco fuían los proyectos más grandes como modelos para predecir la morosidad de los clientes. Entiendo, ¿qué herramientas manejas al día a día? Uso Python para informar los datos, sobre todo la librería pandes y busco la base con SQL prácticamente todos los días. Los tableros para la gerencia los armaba en Power BI porque a ellos les gusta ver todos los gráficos. Perfecto, esta posición tiene contacto con proveedores de otros países. ¿Cómo está tu inglés? Diría que mi inglés es intermedio, puedo leer documentación técnicas sin problema y entiendo cuando me hablan, pero para conversar fluido todavía me cuesta un poco. Estoy llevando clases los sábados para mejorar. Muy bien, ahora el tema económico, ¿cuál es tu pretensión salarial? Me estoy pensando unos 6.500 solos al mes, sé que es un poco más en lo que ganaba antes, pero creo que es lo que ha aprendido, puedo aportar más y si hay beneficios adicionales los podemos conversar. Lo tomaremos en cuenta. ¿Cuánto podrías incorporarte? Debo dar un previso en un trabajo temporal que tengo ahorita, así que podría empezar en dos semanas. Antes de cerrar, ¿por qué te interesa trabajar con nosotros? Me llamó la atención que la empresa trabaja con proyectos reales y dan un espacio para proponer ideas. Busco un lugar donde pueda aprender de gente con más trayectoria, pero también asumir responsabilidad. Además, el horario y ubicación me quedan bastante cómodos. ¿Cuál dirías que es tu mayor fortaleza? Bueno, soy vasentro ordenado, me gusta explicar las cosas con calma, cuando algo sale mal prefiero revisar qué paso a paso a paso y eso me ha ayudado a llevarme bien con los equipos. Excelente, eso sería todo por mi parte, te escriberemos esta semana para contarte cómo sigue el proceso.",
+   "fields": {
+    "anios_experiencia": {
+     "correct": true,
+     "abs_err": 0.0,
+     "status": "verificado",
+     "pred": 4,
+     "gold": 4.0
+    },
+    "ultimo_puesto": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "lista de datos en una financiera",
+     "gold": "analista de datos"
+    },
+    "tecnologias": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": [
+      "Python",
+      "pandes",
+      "SQL",
+      "Power BI"
+     ],
+     "gold": [
+      "python",
+      "pandas",
+      "sql",
+      "power bi"
+     ]
+    },
+    "pretension_salarial": {
+     "correct": true,
+     "abs_err": 0.0,
+     "status": "verificado",
+     "pred": 6500,
+     "gold": 6500.0
+    },
+    "disponibilidad": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "15_dias",
+     "gold": "15_dias"
+    },
+    "nivel_ingles": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "intermedio",
+     "gold": "intermedio"
+    }
+   },
+   "validation": null,
+   "traps": {},
+   "record_acc": 0.6666666666666666
+  },
+  {
+   "task": "interview",
+   "clip": "interview_02",
+   "model": "small",
+   "compute_type": "int8",
+   "device": "cpu",
+   "glossary": false,
+   "level": "L0",
+   "wer": 0.1724137931034483,
+   "cer": 0.09130645944633317,
+   "sec_per_audio_min": 17.293655313628115,
+   "vram_peak_mb": null,
+   "snr_db_measured": null,
+   "text": "Hola, buenos tardes. Antes de que nada, ¿cuándo estarás disponible si te desecronamos? Buenos tardes, estoy libre desde la semana pasada, así que puedo empezar inmediato, sin ningún problema. Genial, háblame tu formación y tu trayectoria. Bueno, hace 10 años que empecé a estudiar sistemas y hace unos ciclos ya estaba haciendo páginas web para amigos. Después de graduar, me entré a trabajar en una empresa de logística. En total, tengo 7 años de experiencia profesional, casi todo en desarrollo de software. ¿Y cuál fue tu último puesto? Trabajé con un desarrollador backend en una empresa de transporte durante casi tres años en el último puesto. Me encargaba de interfaces de programación que usaban las aplicaciones móviles de los conductores. ¿Con qué tecnologías? Principalmente Python, todo lo desplegábamos con Docker, llevábamos el control de versiones con GT y los servicios que corrían en AWS. También he contado otras cosas, he tocado otras cosas, pero estas son las con las que ya me siento más seguro. Vengo que he trabajado con equipos de otros países, ¿cómo peorías tu nivel de inglés? Tengo un nivel avanzado de inglés, viví en un tiempo en Canadá y las reuniones diarias con el equipo de allá eran en inglés, escribo documentación y hasta he dado presentaciones sin mayor problema. Muy bien, hablamos del dinero. ¿Qué pretensión salyer tienes? Pretensión es 2500 dólares mensuales, entiendo que depende del presupuesto de la empresa, pero es el rango en el que me estoy moviendo con otras ofertas. ¿Qué es lo que más valora de un equipo de trabajo? Bueno, la comunicación clara, prefiero un equipo donde se pregunte cuándo hay dudas, que se revisen el trabajo de los demás y molestar si reconozcan los errores rápido. He visto cuándo eso falla, los proyectos se retrasan más de lo necesario. ¿Algo que quieras preguntarnos sobre el puesto? Sí, me gustaría saber cómo se procesó la revisión de código y si hay espacio para capacitaciones durante el año. Gracias por la franqueza, revisaremos tu perfil y con el equipo técnico, te daremos una respuesta inmediata. Perfecto, muchas gracias, que tengan un buen día.",
+   "fields": {
+    "anios_experiencia": {
+     "correct": true,
+     "abs_err": 0.0,
+     "status": "verificado",
+     "pred": 7,
+     "gold": 7.0
+    },
+    "ultimo_puesto": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "desarrollador backend",
+     "gold": "desarrollador backend"
+    },
+    "tecnologias": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": [
+      "Python",
+      "Docker",
+      "GT",
+      "AWS"
+     ],
+     "gold": [
+      "python",
+      "docker",
+      "git",
+      "aws"
+     ]
+    },
+    "pretension_salarial": {
+     "correct": true,
+     "abs_err": 0.0,
+     "status": "verificado",
+     "pred": 2500,
+     "gold": 2500.0
+    },
+    "disponibilidad": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "inmediata",
+     "gold": "inmediata"
+    },
+    "nivel_ingles": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "avanzado",
+     "gold": "avanzado"
+    }
+   },
+   "validation": null,
+   "traps": {},
+   "record_acc": 0.8333333333333334
+  },
+  {
+   "task": "interview",
+   "clip": "interview_03",
+   "model": "small",
+   "compute_type": "int8",
+   "device": "cpu",
+   "glossary": false,
+   "level": "L0",
+   "wer": 0.21951219512195122,
+   "cer": 0.11316872427983539,
+   "sec_per_audio_min": 15.58255876583106,
+   "vram_peak_mb": null,
+   "snr_db_measured": null,
+   "text": "Hola bienvenida voy a hacer algunas preguntas tomate el tiempo que necesites empecemos con lo básico cuándo empiezas a ganar cuánto espera esperas a ganar o la gracia es bueno la verdad es que yo busco mi primer trabajo estale así que mi pretensión sería 2800 soles al mes si es un poco menos pero hay una oportunidad de crecer también lo consideraría entiendo qué herramientas conoces en la universidad usamos mucho excel control de dinámicas y macros también aprendí hacer gráficos en power bien un curso y estoy practicando consultas de secuel de con unos ejercicios en línea ha trabajado antes en algo relacionado si trabajé como practicante de sistemas en una clínica apoyando el área de reporte y salada de programas revisaba a las computadoras y a veces ayudaba a ordenar los reportes de atención a pacientes cuánto borró la experiencia fue un año empecé el último ciclo de mi carrera y me quedé unos meses más después de regresar porque el jefe del área me enseñó muchas cosas genial y sobre el idioma hablas inglés en inglés es básico la verdad entiendo palabras sueltas y poder leer correos sencillos pero no podría tener una conversación fluida quiero empezar un curso apenas tenga un ingreso fijo muy honesta se agradece última pregunta en cuánto tiempo podrías empezar todavía tengo que entrenar en informe final de mi clínica y cerrar algunos pendientes así que necesitaría un mes para empezar última cosa porque crees que sería es una buena opción para este puesto porque prendo rápido y no me da vergüenza preguntar cuando no entiendo algo en la clínica siempre me daban tareas nuevas y las iba resolviendo a veces buscando tutoriales y hasta tarde tengo muchas ganas de demostrar qué puedo lo que puedo hacer se note el entusiasmo tienes alguna pregunta para nosotros si quisiera saber si trabajas presencial o híbrido perfecto notado muchas gracias te avisaremos los resultados por correo gracias",
+   "fields": {
+    "anios_experiencia": {
+     "correct": true,
+     "abs_err": 0.0,
+     "status": "verificado",
+     "pred": 1,
+     "gold": 1.0
+    },
+    "ultimo_puesto": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "practicante de sistemas",
+     "gold": "practicante de sistemas"
+    },
+    "tecnologias": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": [
+      "excel",
+      "power bien",
+      "secuel"
+     ],
+     "gold": [
+      "excel",
+      "power bi",
+      "sql"
+     ]
+    },
+    "pretension_salarial": {
+     "correct": true,
+     "abs_err": 0.0,
+     "status": "verificado",
+     "pred": 2800,
+     "gold": 2800.0
+    },
+    "disponibilidad": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "30_dias",
+     "gold": "30_dias"
+    },
+    "nivel_ingles": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "basico",
+     "gold": "basico"
+    }
+   },
+   "validation": null,
+   "traps": {},
+   "record_acc": 0.8333333333333334
+  },
+  {
+   "task": "interview",
+   "clip": "interview_04",
+   "model": "small",
+   "compute_type": "int8",
+   "device": "cpu",
+   "glossary": false,
+   "level": "L0",
+   "wer": 0.1513353115727003,
+   "cer": 0.08206388206388206,
+   "sec_per_audio_min": 17.158382103545875,
+   "vram_peak_mb": null,
+   "snr_db_measured": null,
+   "text": "Buenos días, he leído tu currículum, pero me gustaría escucharlo de ti. ¿Cuál ha sido tu recorrido? Buenos días, llevo 10 años de experiencia analítica avanzada, la mayor parte en bancada, una empresa de telecomunicaciones, empecé como analista y fui subiendo hasta el día de ahora equipos. Y tu posición más reciente, mi último puesto fue gerente de analítica en una empresa de telecomunicaciones donde coordinaba a 8 personas, manejábamos un presupuesto de 300 mil soles al año para proyectos de ciencia de datos y la mayor parte se iba en infraestructura. Interesante, ¿qué tecnologías vas a usar a tu equipo? Entrenábamos las redes neuronales con TensorFlow, la mayoría del código en Python, todo en la nube de AWS y para los análisis exploratorios usábamos SQL sobre un almacén de datos enorme. Perfecto, ¿y cómo el cargo implica reportar a la matriz? ¿Cómo anda con el inglés? Tengo un nivel avanzado, tengo certificación y la mayoría de mis reuniones en los últimos años serán proveedores de Estados Unidos y Europa. Hablemos de la compensación, ¿cuánto esperáis ganar? Considero mi experiencia del tamaño del equipo que tendría el cargo, mi pretensión es de 12 mil soles mensuales, estoy abierto a una parte variable por objetivos y si la empresa maneje ese esquema. Tomamos nota, ¿qué tan pronto podrías empezar? Bueno, una cultura, confianza. Tengo un contacto vigente con Cláusula de Salida, así que necesito tres meses para dejar todo en orden y entregar bien a mi reemplazo. Para terminar, ¿qué tipo de cultura de trabajo prefieres? Una cultura de confianza, con objetivos claros pero sin incomodar cada mundo de la persona. En mis últimos, en mis equipos siempre intenté serla que pudiera enfocarse y aprender y proponer mejoras, y creo que los resultados eran mejores así. También valoro mucho la formación continua. ¿Coincidimos bastante en eso? ¿Tienes alguna pregunta para nosotros? Quisiera conocer cómo está compuesto el equipo actual y cuáles son los principales retos para este año. Es comprensible, gracias por tu tiempo, nos pondremos en contacto contigo. Gracias a ustedes. Buen día.",
+   "fields": {
+    "anios_experiencia": {
+     "correct": true,
+     "abs_err": 0.0,
+     "status": "verificado",
+     "pred": 10,
+     "gold": 10.0
+    },
+    "ultimo_puesto": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "gerente de analítica",
+     "gold": "gerente de analítica"
+    },
+    "tecnologias": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": [
+      "TensorFlow",
+      "Python",
+      "AWS",
+      "SQL"
+     ],
+     "gold": [
+      "tensorflow",
+      "python",
+      "aws",
+      "sql"
+     ]
+    },
+    "pretension_salarial": {
+     "correct": true,
+     "abs_err": 0.0,
+     "status": "verificado",
+     "pred": 12000,
+     "gold": 12000.0
+    },
+    "disponibilidad": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "mas_de_30_dias",
+     "gold": "mas_de_30_dias"
+    },
+    "nivel_ingles": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "avanzado",
+     "gold": "avanzado"
+    }
+   },
+   "validation": null,
+   "traps": {},
+   "record_acc": 1.0
+  },
+  {
+   "task": "interview",
+   "clip": "interview_05",
+   "model": "small",
+   "compute_type": "int8",
+   "device": "cpu",
+   "glossary": false,
+   "level": "L0",
+   "wer": 0.1345565749235474,
+   "cer": 0.0719915922228061,
+   "sec_per_audio_min": 16.439478486458594,
+   "vram_peak_mb": null,
+   "snr_db_measured": null,
+   "text": "Hola, qué gusto conocerte. Cuéntame, ¿en qué se estaba trabajando últimamente? Hola, el gusto es mío. Me desempeñé como científico de datos en un startup de comercio electrónico donde analizaba el comportamiento de compra de los usuarios y armadas modelos de recomendación para la página principal. ¿Cuántos años llevas en esto? 5 años con la experiencia en total y los últimos dos eran en ese startup que fue donde más aprendí porque éramos un equipo pequeño y todos hacíamos de todo. ¿Qué bien? ¿Qué herramientas utilizadas? Todo lo hago en Python, con pandas para manipular las bases de datos, para mostrar resultados de marketing armadas pequeñas aplicaciones con streamlit y mantenía el código ordenado con git para no pisarnos entre compañeros. Muy útil. Ahora, ¿cuál es tu pretensión salarial? Mi pretensión salarial es 7.800 soles al mes. Lo calculé según lo que paga el mercado para mi nivel, pero sé que hay más gente de conversación. ¿Entendido? ¿Y el inglés cómo lo manejas? Mi inglés es intermedio, me defiendo bien leyendo artículos y viendo cursos en línea, pero me pone nervioso a hablar en reuniones. Es algo que en lo que estoy trabajando. Es normal. ¿Para cuándo podrías estar disponible? El startup se roba el mes pasado, así que estoy libre. ¿Podría empezar de inmediato? Apenas me digan. Antes de terminar, ¿qué te motiva en este puesto particular? Que combina análisis con comunicación de datos. Me gusta cuando lo que hago se usa de verdad para tomar decisiones y no queda como un informe que nadie lee. También me atrae que el equipo parezca abiertos probar cosas nuevas. ¿Cómo manejas los plazos ajustados? Divido el trabajo en partes pequeñas y reviso si algo se complica y priorizo lo que más impacto tiene. Prefiero entregar algo sencillo y bien hecho que algo ambicioso a medias. Perfecto. Con eso terminamos. Te comunicaremos el resultado en los próximos días. Muchas gracias que le vaya bien.",
+   "fields": {
+    "anios_experiencia": {
+     "correct": true,
+     "abs_err": 0.0,
+     "status": "verificado",
+     "pred": 5,
+     "gold": 5.0
+    },
+    "ultimo_puesto": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "científico de datos",
+     "gold": "científica de datos"
+    },
+    "tecnologias": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": [
+      "Python",
+      "pandas",
+      "streamlit",
+      "git"
+     ],
+     "gold": [
+      "streamlit",
+      "python",
+      "git",
+      "pandas"
+     ]
+    },
+    "pretension_salarial": {
+     "correct": true,
+     "abs_err": 0.0,
+     "status": "verificado",
+     "pred": 7800,
+     "gold": 7800.0
+    },
+    "disponibilidad": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "inmediata",
+     "gold": "inmediata"
+    },
+    "nivel_ingles": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "intermedio",
+     "gold": "intermedio"
+    }
+   },
+   "validation": null,
+   "traps": {},
+   "record_acc": 0.8333333333333334
+  },
+  {
+   "task": "order",
+   "clip": "order_01",
+   "model": "small",
+   "compute_type": "int8",
+   "device": "cpu",
+   "glossary": false,
+   "level": "L0",
+   "wer": 0.421455938697318,
+   "cer": 0.30950775455158464,
+   "sec_per_audio_min": 56.90528268500032,
+   "vram_peak_mb": null,
+   "snr_db_measured": null,
+   "text": "hamburguesa, hambursaría el sabor, buenas tardes en que pueda ayudarte. Buenas tardes quisieron pedido del livery por favor. Claro que si, dígame que se ordenar. Quiero dos hamburguesas, una gaseosa, ah espera mejor tres hamburguesas y que viene a mi primo en la casa y las gaseosas que sean dos en vez de una. Perfecto entonces tres hamburguesas y dos gaseosas ¿no? ¿desagregar algo más? No gracias, si está bien. ¿Tienen alguna duda sobre el pedido del livery? Una consulta, ¿tienen alguna promoción de hoy? Mi primo siempre me pide que pregunte. Hoy no tenemos promociones lamentablemente, pero el del livery a su zona no tiene costo adicional. Ah, qué bien. ¿A qué dirección enviamos el pedido? Ah, venía a los olivos 245. ¿Ha notado? ¿Cómo va a pagar? Bueno, comitera digital. Ok, le confirmo el pedido, tres hamburguesas y dos gaseosas para entregar en la venía de los olivos. El pago en efectivo ¿es correcto? Sí, correcto. No sé, ojalá llegue caliente. Ya tenemos hambre todos. No se preocupe, empacamos todas las bolsas técnicas para que llegue en un buen estado. Perfecto, 66, ¿cuánto demora más o menos? Unos 30 minutos, gracias por su pedido. Que lo disfrute. Gracias a ustedes.",
+   "fields": {
+    "items": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": [
+      {
+       "product": "hamburguesa",
+       "quantity": 3,
+       "unit_price": null
+      },
+      {
+       "product": "gaseosa",
+       "quantity": 2,
+       "unit_price": null
+      }
+     ],
+     "gold": [
+      {
+       "product": "hamburguesa",
+       "quantity": 3,
+       "unit_price": 18
+      },
+      {
+       "product": "gaseosa",
+       "quantity": 2,
+       "unit_price": 6
+      }
+     ]
+    },
+    "promocion": {
+     "correct": true,
+     "abs_err": null,
+     "status": "ausente",
+     "pred": null,
+     "gold": null
+    },
+    "direccion_entrega": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "los olivos 245",
+     "gold": "avenida los olivos 245"
+    },
+    "metodo_pago": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "efectivo",
+     "gold": "efectivo"
+    },
+    "total_dicho": {
+     "correct": true,
+     "abs_err": 0.0,
+     "status": "verificado",
+     "pred": 66,
+     "gold": 66
+    }
+   },
+   "validation": {
+    "status": "ok",
+    "computed_total": 66,
+    "said_total": 66,
+    "diagnosis": null
+   },
+   "traps": {
+    "autocorreccion": true,
+    "total_incorrecto": false,
+    "digitos": true
+   },
+   "record_acc": 0.8
+  },
+  {
+   "task": "order",
+   "clip": "order_02",
+   "model": "small",
+   "compute_type": "int8",
+   "device": "cpu",
+   "glossary": false,
+   "level": "L0",
+   "wer": 0.3985239852398524,
+   "cer": 0.3056282722513089,
+   "sec_per_audio_min": 17.666899522709596,
+   "vram_peak_mb": null,
+   "snr_db_measured": null,
+   "text": "¿Pixaría? ¿Y hamburguesaría? ¿La grano? ¿Uas noches? ¿Qué desea ordenar? ¿Uas noches? ¿Quisiera una pizza, dos papas fritas, tres gaseosas? No, perdón, mejor dos pizzas. Aunque somos seis en la reunión. ¿De acuerdo? Dos pizzas y dos papas y tres gaseosas. ¿En qué pedido califica el Comodo Familiar? ¿Qué tiene 10 soles de descuento? ¿Lo aplicamos? Sí, claro, aplíquelo. Hay que hacer algo más. Consulta. Las papas vienen con salsas. Sí, incluyen salsas de la casa. Perfecto, muchas gracias a los chicos, les encanta. No, yo lo registré. ¿Cuál es la dirección de entrega? Calle a las begonias 178. El segundo piso, edificio gris. Hay un taller mecánico en la planta baja. Le recuerdo que repartidor no puedo subir los pisos altos, si no hay portero por una cuestión de seguridad. ¿Alguien podría bajar a recibir? Sí, no hay problema, mi hermana bajará. Perfecto, lo levantamos junto a la dirección. Sí, perfecto. ¿Cómo pago? Bueno, pago con tarjeta. Todo bien, gracias. Es que tenemos invitados y no queremos que falten nada. Entendido, lo preparamos todos. Si el repartidor lleva POS, déjenme hacer el cálculo. El total es 106 soles. Está bien. Gracias. ¿Cuándo tarda? Como 40 minutos. OK, muchas gracias.",
+   "fields": {
+    "items": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": [
+      {
+       "product": "pizzas",
+       "quantity": 2,
+       "unit_price": null
+      },
+      {
+       "product": "papas",
+       "quantity": 2,
+       "unit_price": null
+      },
+      {
+       "product": "gaseosas",
+       "quantity": 3,
+       "unit_price": null
+      }
+     ],
+     "gold": [
+      {
+       "product": "pizza",
+       "quantity": 2,
+       "unit_price": 35
+      },
+      {
+       "product": "papas",
+       "quantity": 2,
+       "unit_price": 9
+      },
+      {
+       "product": "gaseosa",
+       "quantity": 3,
+       "unit_price": 6
+      }
+     ]
+    },
+    "promocion": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "Comodo Familiar con 10 soles de descuento",
+     "gold": "combo_familiar"
+    },
+    "direccion_entrega": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "Calle a las begonias 178. El segundo piso, edificio gris",
+     "gold": "calle las begonias 1780"
+    },
+    "metodo_pago": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "tarjeta",
+     "gold": "tarjeta"
+    },
+    "total_dicho": {
+     "correct": true,
+     "abs_err": 0.0,
+     "status": "verificado",
+     "pred": 106,
+     "gold": 106
+    }
+   },
+   "validation": {
+    "status": "no_validable",
+    "computed_total": null,
+    "said_total": 106,
+    "diagnosis": null
+   },
+   "traps": {
+    "autocorreccion": true,
+    "total_incorrecto": true,
+    "digitos": true
+   },
+   "record_acc": 0.4
+  },
+  {
+   "task": "order",
+   "clip": "order_03",
+   "model": "small",
+   "compute_type": "int8",
+   "device": "cpu",
+   "glossary": false,
+   "level": "L0",
+   "wer": 0.5683760683760684,
+   "cer": 0.45041635124905377,
+   "sec_per_audio_min": 17.23997808176346,
+   "vram_peak_mb": null,
+   "snr_db_measured": null,
+   "text": "Hola, ¿qué tal? Buenas tardes, hamburgueserías, San Mateo. Buenas tardes, pero ¿qué es el pedido? Buenas tardes, el pedido es para almorzar en la oficina, quiero una hamburguesa y ensalada y una porción de papas. Está bien, lo confirmo. Sí, por favor, y el aderezo aparte, muchas gracias. ¿Prefiere una hamburguesa con todas las cremas o algún en especial? Perfecto, punto medio entonces. ¿Quiere que le agregamos alguna bebida? No, no, gracias. ¿Cuál es su dirección? Jirón Guaya, 456. En el centro. Preguntas por la recepción de Marcela. Perfecto, Jirón Guaya. ¿Cómo será el pago? En Yape, básicamente. Una pregunta. ¿Nacita cubiertos, escartables o servilletas? Sí, por favor. Más que todas servilletas. Sí, perfecto. Las incluimos, le repito el pedido. Una hamburguesa, no ensalada con aderezo aparte y unas papas. Está bien, sí. Claro, el total sería en 47 soles. Entendido, el agua y el pago en Yape ahora mismo. Está listo en media hora. Sí, en 25 minutos la llega. Gracias por su preferencia.",
+   "fields": {
+    "items": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": [
+      {
+       "product": "hamburguesa",
+       "quantity": 1,
+       "unit_price": null
+      },
+      {
+       "product": "ensalada",
+       "quantity": 1,
+       "unit_price": null
+      },
+      {
+       "product": "papas",
+       "quantity": 1,
+       "unit_price": null
+      }
+     ],
+     "gold": [
+      {
+       "product": "hamburguesa",
+       "quantity": 1,
+       "unit_price": 18
+      },
+      {
+       "product": "ensalada",
+       "quantity": 1,
+       "unit_price": 14
+      },
+      {
+       "product": "papas",
+       "quantity": 1,
+       "unit_price": 9
+      }
+     ]
+    },
+    "promocion": {
+     "correct": true,
+     "abs_err": null,
+     "status": "ausente",
+     "pred": null,
+     "gold": null
+    },
+    "direccion_entrega": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "Jirón Guaya, 456. En el centro. Preguntas por la recepción de Marcela.",
+     "gold": "jirón huallaga 456"
+    },
+    "metodo_pago": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "yape",
+     "gold": "yape"
+    },
+    "total_dicho": {
+     "correct": true,
+     "abs_err": 0.0,
+     "status": "verificado",
+     "pred": 47,
+     "gold": 47
+    }
+   },
+   "validation": {
+    "status": "descuadre",
+    "computed_total": 41,
+    "said_total": 47,
+    "diagnosis": "error_hablante"
+   },
+   "traps": {
+    "autocorreccion": false,
+    "total_incorrecto": true,
+    "digitos": true
+   },
+   "record_acc": 0.8
+  },
+  {
+   "task": "order",
+   "clip": "order_04",
+   "model": "small",
+   "compute_type": "int8",
+   "device": "cpu",
+   "glossary": false,
+   "level": "L0",
+   "wer": 0.3145539906103286,
+   "cer": 0.21362489486963834,
+   "sec_per_audio_min": 19.64448536801449,
+   "vram_peak_mb": null,
+   "snr_db_measured": null,
+   "text": "Bueno, buenas noches, el sabor lo ayudo, si quiero dos pizzas y una ensalada, por favor. Ok, lo confirmo algo más, mejor quite la ensalada, que ya no la voy a necesitar, solo las dos pizzas. Listo, solo las dos pizzas, le comento que hoy tenemos descuento de 10% por pedidos de pizza. Ah, que alguien me lo aplica? Entonces, pregunta, las pizzas vienen con el borde relleno, o eso se cobra aparte, el borde relleno es opcional, pero si lo regalamos por ser cliente frecuente, ¿quemable? Entonces sí, con borde relleno, por favor mi familia cladora, por supuesto la dirección a venir a Equipa 12004, cerca del parque de la Puerta de Azul, ha notado pago en efectivo, pago con, sí, en efectivo, justo tengo vietes de 50, le repito el pedido dos pizzas con el descuento aplicado, correcto, ¿no? Correcto. Y por favor que las corten en 8 pedazos, que mis arruinos son muy exigentes, descuide, vienen cortadas de forma tradicional en 8% cada una. Perfecto, entonces, perfecto, el total serían 77 soles, está bien, gracias, ¿cuándo tiempo? Cerca de 35 minutos y que tenga buena noche, igualmente, adiós.",
+   "fields": {
+    "items": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": [
+      {
+       "product": "pizzas",
+       "quantity": 2,
+       "unit_price": null
+      }
+     ],
+     "gold": [
+      {
+       "product": "pizza",
+       "quantity": 2,
+       "unit_price": 35
+      }
+     ]
+    },
+    "promocion": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "descuento de 10% por pedidos de pizza",
+     "gold": "descuento_10"
+    },
+    "direccion_entrega": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "Arequipa 12004",
+     "gold": "avenida arequipa 1204"
+    },
+    "metodo_pago": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "efectivo",
+     "gold": "efectivo"
+    },
+    "total_dicho": {
+     "correct": false,
+     "abs_err": 4.0,
+     "status": "verificado",
+     "pred": 77,
+     "gold": 73
+    }
+   },
+   "validation": {
+    "status": "no_validable",
+    "computed_total": null,
+    "said_total": 77,
+    "diagnosis": null
+   },
+   "traps": {
+    "autocorreccion": true,
+    "total_incorrecto": true,
+    "digitos": true
+   },
+   "record_acc": 0.2
+  },
+  {
+   "task": "order",
+   "clip": "order_05",
+   "model": "small",
+   "compute_type": "int8",
+   "device": "cpu",
+   "glossary": false,
+   "level": "L0",
+   "wer": 0.3472803347280335,
+   "cer": 0.23888470233609646,
+   "sec_per_audio_min": 19.052773271315793,
+   "vram_peak_mb": null,
+   "snr_db_measured": null,
+   "text": "¿Pixaría y hamburguesaría el sabor? Buenas tardes, ¿qué se le ofrece? Buenas tardes, es para el cumpleaños de mi hija, así que quiero 3 pizzas, 3 jaciosas y 2 ensaladas. Qué lindo, 3 pizzas, 3 jaciosas y 2 ensaladas. Con eso califica para el combo familiar con 10 soles de descuento. ¿Se lo aplico? Sí, por favor. Una consulta. ¿Pueden escribir un mensaje en la caja con salsa? Quiero que diga feliz cumpleaños. Sí, con un solo escribimos. Es una fiesta grande. Sí, vienen todos los compañeros de colegio y sus abuelos, así que seguro vamos a pedir de nuevo la próxima semana. De hecho, ¿a qué dirección enviamos? Los cedros 3.306. En la urbanización las palmeras. Hay un logo grande en la puerta, no tiene pierda. Le confirmó el pedido a 3 pizzas, 3 jaciosas y 2 ensaladas con el combo familiar. ¿Está bien así? Sí. A una cosa, ¿podrían incluir una bela parte? Es una gran sorpresa. Claro que sí, con gusto. Se lo enviamos en una bolsita para que lo coloquen ustedes. Qué amable, muchas gracias. ¿Cómo se va a pagar? Ah, en yapé. Claro que sí. Esas las cuentas en total es 47 soles. Perfecto. Antes de las 5, por favor, llévelas. Muchas gracias. Ok, confirmado. Gracias.",
+   "fields": {
+    "items": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": [
+      {
+       "product": "pizzas",
+       "quantity": 3,
+       "unit_price": null
+      },
+      {
+       "product": "jaciosas",
+       "quantity": 3,
+       "unit_price": null
+      },
+      {
+       "product": "ensaladas",
+       "quantity": 2,
+       "unit_price": null
+      }
+     ],
+     "gold": [
+      {
+       "product": "pizza",
+       "quantity": 3,
+       "unit_price": 35
+      },
+      {
+       "product": "gaseosa",
+       "quantity": 3,
+       "unit_price": 6
+      },
+      {
+       "product": "ensalada",
+       "quantity": 2,
+       "unit_price": 14
+      }
+     ]
+    },
+    "promocion": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "combo familiar con 10 soles de descuento",
+     "gold": "combo_familiar"
+    },
+    "direccion_entrega": {
+     "correct": false,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "Los cedros 3.306. En la urbanización las palmeras.",
+     "gold": "calle los cedros 3306"
+    },
+    "metodo_pago": {
+     "correct": true,
+     "abs_err": null,
+     "status": "verificado",
+     "pred": "yape",
+     "gold": "yape"
+    },
+    "total_dicho": {
+     "correct": false,
+     "abs_err": 94.0,
+     "status": "verificado",
+     "pred": 47,
+     "gold": 141
+    }
+   },
+   "validation": {
+    "status": "no_validable",
+    "computed_total": null,
+    "said_total": 47,
+    "diagnosis": null
+   },
+   "traps": {
+    "autocorreccion": false,
+    "total_incorrecto": false,
+    "digitos": true
+   },
+   "record_acc": 0.2
+  }
+ ],
+ "summary": [
+  {
+   "task": "interview",
+   "model": "small",
+   "compute_type": "int8",
+   "device": "cpu",
+   "glossary": false,
+   "level": "L0",
+   "n_clips": 5,
+   "wer": 0.17129558486988775,
+   "wer_lo": 0.14883951321918873,
+   "wer_hi": 0.19500090782545543,
+   "cer": 0.09182548369123289,
+   "cer_lo": 0.07972708383512163,
+   "cer_hi": 0.10442405696450713,
+   "sec_per_audio_min": 16.794578064650466,
+   "vram_peak_mb": null,
+   "field_accuracy": {
+    "anios_experiencia": 1.0,
+    "ultimo_puesto": 0.6,
+    "tecnologias": 0.4,
+    "pretension_salarial": 1.0,
+    "disponibilidad": 1.0,
+    "nivel_ingles": 1.0
+   },
+   "abs_error": {
+    "anios_experiencia": 0.0,
+    "pretension_salarial": 0.0
+   },
+   "coverage": {
+    "anios_experiencia": 1.0,
+    "ultimo_puesto": 1.0,
+    "tecnologias": 1.0,
+    "pretension_salarial": 1.0,
+    "disponibilidad": 1.0,
+    "nivel_ingles": 1.0
+   },
+   "acc_verified": {
+    "anios_experiencia": 1.0,
+    "ultimo_puesto": 0.6,
+    "tecnologias": 0.4,
+    "pretension_salarial": 1.0,
+    "disponibilidad": 1.0,
+    "nivel_ingles": 1.0
+   },
+   "macro_f1": {
+    "disponibilidad": 1.0,
+    "nivel_ingles": 1.0
+   },
+   "record_acc": 0.8333333333333334
+  },
+  {
+   "task": "order",
+   "model": "small",
+   "compute_type": "int8",
+   "device": "cpu",
+   "glossary": false,
+   "level": "L0",
+   "n_clips": 5,
+   "wer": 0.41003806353032013,
+   "wer_lo": 0.3424796490512675,
+   "wer_hi": 0.48822762688717036,
+   "cer": 0.3036123950515365,
+   "cer_lo": 0.23785342829931921,
+   "cer_hi": 0.3748763406336769,
+   "sec_per_audio_min": 26.10188378576073,
+   "vram_peak_mb": null,
+   "field_accuracy": {
+    "items": 0.4,
+    "promocion": 0.4,
+    "direccion_entrega": 0.0,
+    "metodo_pago": 1.0,
+    "total_dicho": 0.6
+   },
+   "abs_error": {
+    "total_dicho": 19.6
+   },
+   "coverage": {
+    "items": 1.0,
+    "promocion": 0.6,
+    "direccion_entrega": 1.0,
+    "metodo_pago": 1.0,
+    "total_dicho": 1.0
+   },
+   "acc_verified": {
+    "items": 0.4,
+    "promocion": 0.0,
+    "direccion_entrega": 0.0,
+    "metodo_pago": 1.0,
+    "total_dicho": 0.6
+   },
+   "macro_f1": {
+    "metodo_pago": 1.0
+   },
+   "record_acc": 0.48,
+   "traps": {
+    "planted": 3,
+    "caught": 1,
+    "missed": 2,
+    "false_alarms": 0,
+    "diagnosis_correct": 1,
+    "diagnosis_total": 1
+   }
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "text": "Bueno, buenas noches, el sabor lo ayudo, si quiero dos pices y una ensalada, por favor. Ok, lo confirmo algo mas, mejor quite la ensalada que ya no la voy a necesitar, solo las dos pizzas. Listo, solo las dos pizzas, de momento que tenemos un descuento de 10% por pedidos de pizza. Ah, que ahí me lo aplica, entonces, pregunte, las pizzas vienen con el borde relleno, o eso se cobra parte. El borde relleno es excepcional, pero si lo revelamos por ser cliente frecuente, quemable. Entonces si, con borde relleno, por favor, una familia de la verdadera. Por supuesto, la dirección venía en Equipa 12004, cerca del parque de las fuertes azules. Ha notado, paga en efectivo, pago con... si, en efectivo, puso tengo 10 de 50. Le repito el pedido dos pizzas con el descuento aplicado, correcto, no? Correcto. Y por favor, que las corten en 8 pedazos, que mis abuelos son muy exigentes. Nos cuiden, vienen cortadas de forma tradicional, en 8% cada uno. Perfecto, entonces, perfecto. En total serían 77 soles. Está bien, gracias, cuándo tiempo? Certa de 30 y 5 minutos, y que tenga buena noche. Igualmente, adiós.",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 22.707389599643648,
+ "audio_s": 69.3973125,
+ "sec_per_audio_min": 19.632509198084854,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_04",
+ "task": "order",
+ "level": "L3",
+ "snr_db_measured": 10.000000000418401,
+ "snr_db_target": 10
+}

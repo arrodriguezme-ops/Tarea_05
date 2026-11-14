@@ -1,0 +1,135 @@
+# Toda ruta, modelo, umbral y prompt vive aqui. Credenciales: .env (ver .env.example).
+paths:
+  audio_dir: data/audio            # no se versiona; ver README
+  ground_truth_interviews: data/ground_truth/interviews.csv
+  ground_truth_orders: data/ground_truth/orders.json
+  cache_transcripts: cache/transcripts
+  cache_records: cache/records
+  results_dir: results
+
+asr:
+  language: es
+  beam_size: 5
+  # Para comparar: lista de (modelo, compute_type). device: auto|cuda|cpu
+  default_model: small
+  default_compute_type: int8
+  default_device: auto
+  models: [small, large-v3]
+  compute_types: [float16, int8]
+  # Mecanismo de glosario: hotwords (faster-whisper >= 1.0.3) o initial_prompt.
+  glossary_mechanism: hotwords     # hotwords | initial_prompt
+  vram_poll_seconds: 0.1
+
+normalization:
+  # Regla unica para WER/CER y verificacion: minusculas, sin tildes (n con tilde -> n),
+  # sin puntuacion, separadores de miles en cifras eliminados, espacios colapsados.
+  lowercase: true
+  strip_accents: true
+
+glossary:
+  tecnologias:        # canonico: [variantes que puede escribir/oir el ASR]
+    python: [python, piton]
+    sql: [sql, es ku ele, esquel]
+    power bi: [power bi, power bi]
+    docker: [docker, doquer]
+    pandas: [pandas]
+    tensorflow: [tensorflow, tensor flow]
+    excel: [excel]
+    git: [git]
+    aws: [aws, a w s]
+    streamlit: [streamlit, estrimlit]
+
+interview:
+  fields:
+    anios_experiencia: numeric
+    ultimo_puesto: text
+    tecnologias: list
+    pretension_salarial: numeric
+    disponibilidad: categorical
+    nivel_ingles: categorical
+  salary_min: 500
+  salary_keywords: [pretension, sueldo, salario, cobrar, remuneracion]
+  currencies: {soles: PEN, sol: PEN, dolares: USD, dolar: USD}
+  puesto_patterns:    # regex sobre texto normalizado; grupo 1 = puesto
+    - "(?:trabaje|trabajo|fui|me desempene|desempenaba) como ([a-z ]{3,40}?)(?: en | durante | por | y | hasta |$)"
+    - "(?:ultimo puesto|ultimo cargo) (?:fue|es|era) (?:de )?([a-z ]{3,40}?)(?: en | durante | por | y | hasta |$)"
+  disponibilidad_patterns:   # [regex, categoria], el primero que calce gana
+    - ["inmediata|de inmediato|ahora mismo|cuanto antes", inmediata]
+    - ["(?:dos|2) semanas|quince dias|15 dias", 15_dias]
+    - ["(?:un|1) mes|treinta dias|30 dias|cuatro semanas", 30_dias]
+    - ["(?:dos|2|tres|3) meses", mas_de_30_dias]
+  nivel_ingles_patterns:
+    - ["ingles (?:es )?(?:avanzado|fluido)|nivel avanzado|c1|c2", avanzado]
+    - ["ingles (?:es )?intermedio|nivel intermedio|b1|b2", intermedio]
+    - ["ingles (?:es )?(?:basico|elemental)|nivel basico|a1|a2|casi nada de ingles", basico]
+
+order:
+  fields:
+    items: items
+    promocion: text
+    direccion_entrega: text
+    metodo_pago: categorical
+    total_dicho: numeric
+  # Dominio elegido: restaurante. Menu inventado; edite a su gusto.
+  domain: restaurante
+  catalog:
+    hamburguesa: {pattern: "hamburguesas?", price: 18}
+    pizza: {pattern: "pizzas?", price: 35}
+    gaseosa: {pattern: "gaseosas?", price: 6}
+    papas: {pattern: "papas( fritas)?", price: 9}
+    ensalada: {pattern: "ensaladas?", price: 14}
+  promotions:         # discount_pct o discount_sol
+    combo_familiar: {pattern: "combo familiar", discount_sol: 10}
+    descuento_10: {pattern: "diez por ciento|10 por ciento", discount_pct: 10}
+  payments:
+    efectivo: "efectivo"
+    tarjeta: "tarjeta"
+    yape: "yape|plin"
+  address_pattern: "((?:avenida|av|calle|jiron|pasaje) [a-z0-9 ]{3,40}? \\d{1,5})"
+  measure_words: [porcion, porciones, orden, ordenes, plato, platos, vaso, vasos]
+  correction_markers: [mejor, perdon, corrijo, cambia, cambio, no espera, en realidad]
+  cancel_markers: [quita, quitame, sin, cancela, elimina]
+  total_keywords: [total]
+  # Diagnostico: si el total dicho y el calculado difieren en una sola palabra con distancia
+  # de edicion relativa <= este umbral -> error del ASR; en otro caso -> error del hablante.
+  asr_error_max_rel_distance: 0.6
+  tolerance_sol: 0.5
+
+llm:
+  provider: google          # google | anthropic
+  model: gemini-3.5-flash-lite   # modelos con cuota gratuita propia; gemini-3.8-flash agoto su cupo diario
+  max_tokens: 800
+  temperature: 0
+  min_interval_s: 4     # separa llamadas para respetar el limite de peticiones
+  system_prompt: |
+    Eres un extractor de datos. Devuelve SOLO JSON valido, sin texto adicional.
+    Para cada campo devuelve {"value": ..., "evidence": "<fragmento EXACTO copiado de la transcripcion>"}.
+    Si el campo no aparece en la transcripcion, devuelve {"value": null, "evidence": null}.
+    No corrijas ni inventes: copia lo que se dijo. La evidencia debe existir literalmente.
+  schemas:
+    interview: |
+      Campos: anios_experiencia (entero), ultimo_puesto (texto), tecnologias (lista de strings),
+      pretension_salarial (numero), disponibilidad (inmediata|15_dias|30_dias|mas_de_30_dias),
+      nivel_ingles (basico|intermedio|avanzado). Para listas, "evidence" es una lista de fragmentos.
+    order: |
+      Campos: items (lista de {product, quantity, unit_price}; usa solo el pedido FINAL tras correcciones),
+      promocion (texto|null), direccion_entrega (texto), metodo_pago (efectivo|tarjeta|yape),
+      total_dicho (numero dicho en voz alta, aunque sea incorrecto). Para items, "evidence" es lista de fragmentos.
+
+ladder:
+  levels: [L0, L1, L2, L3]
+  l1: {bitrate: 12k, codec: libopus, sample_rate: 16000}   # requiere ffmpeg
+  l2: {low_hz: 300, high_hz: 3400, sample_rate: 8000, order: 4}
+  l3: {snr_db: 10, noise: pink, seed: 1234}   # 10 dB ~ cafeteria/calle; se mide y verifica
+  target_sr: 16000
+
+evaluation:
+  # Configuracion sobre la que se compara el extractor LLM (cuesta llamadas a la API)
+  primary: {model: small, compute_type: int8, device: cpu, glossary: false, level: L0}
+  bootstrap_resamples: 2000
+  bootstrap_seed: 7
+  # Umbrales del regression gate (GitHub Actions evalua cache, nunca transcribe)
+  gate:
+    max_wer: 0.35
+    min_interview_field_accuracy: 0.60
+    min_order_trap_catch_rate: 0.60

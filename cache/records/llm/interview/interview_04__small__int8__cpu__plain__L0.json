@@ -1,0 +1,36 @@
+{
+ "fields": {
+  "anios_experiencia": 10,
+  "ultimo_puesto": "gerente de analítica",
+  "tecnologias": [
+   "TensorFlow",
+   "Python",
+   "AWS",
+   "SQL"
+  ],
+  "pretension_salarial": 12000,
+  "disponibilidad": "mas_de_30_dias",
+  "nivel_ingles": "avanzado"
+ },
+ "evidence": {
+  "anios_experiencia": "llevo 10 años de experiencia analítica avanzada",
+  "ultimo_puesto": "mi último puesto fue gerente de analítica",
+  "tecnologias": [
+   "TensorFlow",
+   "Python",
+   "AWS",
+   "SQL"
+  ],
+  "pretension_salarial": "mi pretensión es de 12 mil soles mensuales",
+  "disponibilidad": "necesito tres meses para dejar todo en orden",
+  "nivel_ingles": "Tengo un nivel avanzado"
+ },
+ "verified": {
+  "anios_experiencia": "verificado",
+  "ultimo_puesto": "verificado",
+  "tecnologias": "verificado",
+  "pretension_salarial": "verificado",
+  "disponibilidad": "verificado",
+  "nivel_ingles": "verificado"
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "text": "Hola, ¿qué tal? Buenas tardes, hamburgueserías, San Mateo. Buenas tardes, pero ¿qué es el pedido? Buenas tardes, el pedido es para almorzar en la oficina, quiero una hamburguesa y ensalada y una porción de papas. Está bien, lo confirmo. Sí, por favor, y el aderezo aparte, muchas gracias. ¿Prefiere una hamburguesa con todas las cremas o algún en especial? Perfecto, punto medio entonces. ¿Quiere que le agregamos alguna bebida? No, no, gracias. ¿Cuál es su dirección? Jirón Guaya, 456. En el centro. Preguntas por la recepción de Marcela. Perfecto, Jirón Guaya. ¿Cómo será el pago? En Yape, básicamente. Una pregunta. ¿Nacita cubiertos, escartables o servilletas? Sí, por favor. Más que todas servilletas. Sí, perfecto. Las incluimos, le repito el pedido. Una hamburguesa, no ensalada con aderezo aparte y unas papas. Está bien, sí. Claro, el total sería en 47 soles. Entendido, el agua y el pago en Yape ahora mismo. Está listo en media hora. Sí, en 25 minutos la llega. Gracias por su preferencia.",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 19.95240129996091,
+ "audio_s": 69.44,
+ "sec_per_audio_min": 17.23997808176346,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_03",
+ "task": "order",
+ "level": "L0"
+}

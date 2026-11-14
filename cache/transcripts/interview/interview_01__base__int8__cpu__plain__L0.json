@@ -1,0 +1,16 @@
+{
+ "text": "Buenos días, gracias por venir. Para empezar, cuéntame un poco de ti, ¿qué es lo que has hecho hasta ahora? Bueno, buenos días, gracias a ustedes. Soy ingeniero estadístico, siempre me ha usado trabajar con números. Mi último opuesto fue en la lista de datos en una financiera de mediana, así que estuve hasta el mes pasado, bueno, cuando terminó mi contrato. Ah, ¿cuándo tiempo de experiencia tienes en total trabajando con datos? Tengo cuatro años de experiencia, contando a mis prácticas y empleados formales. A principios, hacía reportes sencillos, y poco a poco fue dando proyectos más grandes como modelos para predecir la amorosidad de los clientes. Entiendo, ¿qué herramientas manejas salida a día? Uso Python para libertad y transformar dos datos, sobre todo la librería Pandes y busco bases con SQL practicando todos los días. Los tableros para la gerencia y los armadas en Power BI, porque hayos les gusta ver todos los gráficos. Perfecto, esta posición tiene contacto con proveedores de otros países. ¿Cómo es a tu inglés? Diría que mi inglés es intermedio. Puedo leer documentación técnicas sin problema y entiendo cuando me hablan, pero para conversar fluido todavía me cuesta un poco. Estoy llevando clases los sábados para mejorar. Muy bien, ahora el tema económico, ¿cuál es tu pretensión salarial? Me estoy pensando unos 1,600 soles al mes. Sé que es un poco más lo que ganaba antes, pero creo que es lo que ha aprendido pueda portar más y si hay beneficios adicionales nos podemos conversar. Lo tomaremos en cuenta y cuánto podrías incorporarte. Debo dar un preaviso de un trabajo temporal que tengo ahorita, así que podría empezar en dos semanas. Antes de cerrar, ¿por qué te interesa trabajar con nosotros? Me llamo la atención que la empresa trabaja con proyectos reales y dan un espacio para proponer ideas. Busco un lugar donde pueda aprender de gente como ese trayectoria, pero también asumir responsabilidad. Además, el horario y ubicación me quedan bastante cómodos. ¿Cuál dirías que es tu mayor fortaleza? Bueno, si vas en todo ordenado, me gusta explicar las cosas con calma. Cuando algo sale mal, prefiero revisar qué paso a paso y eso me ayuda a ayudar a mi con los equipos excelentes. Eso sería todo por mi parte, te escriberemos esta semana para contarte cómo sigue proceso.",
+ "model": "base",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 15.921510300133377,
+ "audio_s": 142.2293125,
+ "sec_per_audio_min": 6.716552314123031,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "interview_01",
+ "task": "interview",
+ "level": "L0"
+}

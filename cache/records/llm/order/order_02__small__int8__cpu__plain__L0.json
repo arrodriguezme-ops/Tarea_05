@@ -1,0 +1,47 @@
+{
+ "fields": {
+  "items": [
+   {
+    "product": "pizzas",
+    "quantity": 2,
+    "unit_price": null
+   },
+   {
+    "product": "papas",
+    "quantity": 2,
+    "unit_price": null
+   },
+   {
+    "product": "gaseosas",
+    "quantity": 3,
+    "unit_price": null
+   }
+  ],
+  "promocion": "Comodo Familiar con 10 soles de descuento",
+  "direccion_entrega": "Calle a las begonias 178. El segundo piso, edificio gris",
+  "metodo_pago": "tarjeta",
+  "total_dicho": 106
+ },
+ "evidence": {
+  "items": [
+   "Dos pizzas y dos papas y tres gaseosas."
+  ],
+  "promocion": "¿En qué pedido califica el Comodo Familiar? ¿Qué tiene 10 soles de descuento?",
+  "direccion_entrega": "Calle a las begonias 178. El segundo piso, edificio gris.",
+  "metodo_pago": "pago con tarjeta.",
+  "total_dicho": "El total es 106 soles."
+ },
+ "verified": {
+  "items": "verificado",
+  "promocion": "verificado",
+  "direccion_entrega": "verificado",
+  "metodo_pago": "verificado",
+  "total_dicho": "verificado"
+ },
+ "validation": {
+  "status": "no_validable",
+  "computed_total": null,
+  "said_total": 106,
+  "diagnosis": null
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "text": "hamburguesa, angusaria y el sabor, una estarda sin que pueda ayudarte una estarda, quisiera un pedido del librí por favor claro que si, díganme que se ordenara quiero dos hamburguesas, una gaseosa ah espera mejor tres hamburguesas si y que viene mi prima en la casa y las gaseosas que sean dos en vez de una perfecto entonces tres hamburguesas y dos vasos ¿no? ¿desagregar algo más? no gracias, si esta bien ¿tienen alguna duda sobre el pedido del librí? una consulta, ¿tenen alguna promoción de hoy? mi primo me pidió que pregunte hoy no tenemos promociónes lamentablemente pero el del librí a su zona no tiene costo adicional ah que bien ¿a que eres un enviamos del pedido? venía los olivos 245 ha metido, ¿y como va a pagar? bueno con mi tera digital ok, le confirmo el pedido los hamburguesas y las gaseosas para entregar y le venía los olivos el pago en efectivos, correcto? si, correcto ojalá llegue caliente no se preocupen empacamos todas las técnicas para que llegue en un buen estado perfecto 66, ¿cuánto demora más o menos? unos 30 minutos eso es por su pedido que lo disfruten gracias a ustedes",
+ "model": "small",
+ "compute_type": "int8",
+ "device_requested": "cpu",
+ "device": "cpu",
+ "elapsed_s": 23.01670869998634,
+ "audio_s": 73.856,
+ "sec_per_audio_min": 18.69858267438232,
+ "vram_peak_mb": null,
+ "glossary": false,
+ "cpu_fallback": false,
+ "clip": "order_01",
+ "task": "order",
+ "level": "L3",
+ "snr_db_measured": 9.999999999711692,
+ "snr_db_target": 10
+}
